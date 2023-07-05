@@ -7,7 +7,7 @@ function App() {
 	const [count, setCount] = useState(0);
 
 	return (
-		<div className="column">
+		<div>
 			<nav className="navbar" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<a className="navbar-item" href="https://bulma.io">
@@ -20,26 +20,36 @@ function App() {
 					</a>
 				</div>
 			</nav>
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
-			<h1>Vite + React</h1>
-			<div className="block">
-				<button onClick={() => setCount((count) => count + 1)}>
+			<section className="hero section">
+				<h1 className="title">
+					Hello World
+				</h1>
+				<p className="subtitle">
+					My first website with <strong>Bulma</strong>!
+				</p>
+			</section>
+			<section className="section">
+				<div className="columns">
+					<a href="https://vitejs.dev" target="_blank" className="column">
+						<img src={viteLogo} className="image is-fullwidth logo vite" alt="Vite logo" />
+					</a>
+					<a href="https://react.dev" target="_blank" className="column">
+						<img src={reactLogo} className="image is-fullwidth logo react" alt="React logo" />
+					</a>
+				</div>
+			</section>
+			<footer className="footer">
+				<h1 className="block title">Vite + React</h1>
+				<button className="block button" onClick={() => setCount((count) => count + 1)}>
 					count is {count}
 				</button>
-				<p>
+				<p className="block">
 					Edit <code className="tag">src/App.tsx</code> and save to test HMR
 				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
+				<p className="block read-the-docs">
+					Click on the Vite and React logos to learn more
+				</p>
+			</footer>
 		</div>
 	);
 }

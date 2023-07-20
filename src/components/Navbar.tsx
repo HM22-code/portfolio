@@ -5,60 +5,50 @@ import profileLogo from "/assets/img/profile-logo.png";
 
 function Navbar() {
     
-  return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-            <a className="navbar-item">
-                <img src={profileLogo} />
-            </a>
-            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbarBasicExample" className="navbar-menu">
-            <div className="navbar-start">
+    return (
+        <nav className="navbar" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
                 <a className="navbar-item">
-                    About
+                    <img src={profileLogo} />
                 </a>
-                <a className="navbar-item">
-                    Resume
+                <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-                <a className="navbar-item">
-                    Projects
-                </a>
-                <div className="navbar-item has-dropdown is-hoverable">
-                    <a className="navbar-link">
-                        More
+            </div>
+            <div id="navbarBasicExample" className="navbar-menu">
+                <div className="navbar-start">
+                    <a className="navbar-item">
+                        About
                     </a>
-                    <div className="navbar-dropdown">
-                        <a className="navbar-item">
-                            Social
-                        </a>
-                        <a className="navbar-item">
-                            Contact
+                    <a className="navbar-item">
+                        Resume
+                    </a>
+                    <a className="navbar-item">
+                        Projects
+                    </a>
+                    <a className="navbar-item">
+                        Social
+                    </a>  
+                </div>
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <a href={cv} download className="button is-primary">
+                            <span className="icon-text">
+                                <span className="icon">
+                                    <Icon path={mdiDownload} title="Download CV" size={1} />
+                                </span>
+                                <span>
+                                    Download CV
+                                </span>
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
-            <div className="navbar-end">
-                <div className="navbar-item">
-                    <a href={cv} download className="button is-primary">
-                        <span className="icon-text">
-                            <span className="icon">
-                                <Icon path={mdiDownload} title="Download CV" size={1} />
-                            </span>
-                            <span>
-                                Download CV
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-  )
+        </nav>
+    )
 }
 
 export default Navbar;

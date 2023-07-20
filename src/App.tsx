@@ -4,7 +4,6 @@ import About from "./components/About";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Social from "./components/Social";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 
@@ -18,7 +17,6 @@ function App() {
 			<Resume />
 			<Projects />
 			<Social />
-			<Contact />
 			<Footer />	
 		</>
 	);

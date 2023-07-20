@@ -3,7 +3,6 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://hm22-code.github.io/portfolio",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build --base=./",
@@ -14,6 +13,7 @@
 		"@mdi/js": "^7.2.96",
 		"@mdi/react": "^1.6.1",
 		"bulma": "^0.9.4",
+		"bulma-timeline": "^3.0.5",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
@@ -26,7 +26,7 @@
 		"eslint": "^8.38.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.3.4",
-		"sass": "^1.63.6",
+		"sass": "^1.64.0",
 		"typescript": "^5.0.2",
 		"vite": "^4.3.9"
 	}

@@ -2,7 +2,7 @@
 function About() {
   
     return (
-        <section className="section">
+        <section id="about" className="section">
             <h2 className="title is-4">
                 About me
             </h2>

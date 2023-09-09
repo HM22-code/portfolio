@@ -27,3 +27,48 @@
 		animation: logo-spin infinite 20s linear;
 	}
 }
+
+$dark-light:#737373;
+
+body.dark {
+    background-color: $dark;
+    color: $light;
+}
+
+body.dark .subtitle,
+body.dark .title {
+    color: $light;
+}
+
+body.dark button {
+    background: $light;
+    color: $dark;
+}
+
+body.dark section {
+    background: $dark;
+    color: $light;
+}
+
+body.dark footer.div,
+body.dark footer,
+body.dark nav {
+    background: $dark-light;
+}
+body.dark div.navbar-menu{
+    background: $dark-light;
+}
+
+body.dark nav a {
+    color: $light;
+}
+
+body.dark div.tile{
+    background: $dark;
+    color: $light;
+}
+
+body.dark div.column{
+    background: $dark;
+    color: $light;
+}

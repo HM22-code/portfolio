@@ -28,7 +28,32 @@
 	}
 }
 
-$dark-light:#737373;
+#banner {
+    background: rgb(0,209,178);
+    background: radial-gradient(circle, rgba(0,209,178,1) 0%, rgba(135,164,235,1) 100%);
+}
+
+#social {
+    background-color: lightblue;
+}
+
+.is-parent {
+    gap: 10px;
+}
+
+.constant-gentle-tilt-shake {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+$dark-light:#4d4d4d;
 
 body.dark {
     background-color: $dark;
@@ -71,4 +96,8 @@ body.dark div.tile{
 body.dark div.column{
     background: $dark;
     color: $light;
+}
+
+body.dark .box{
+    background: $dark;
 }

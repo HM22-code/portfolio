@@ -2,13 +2,25 @@
 function Projects() {
     
     return (
-        <section id="projects" className="section">
+        <section id="projects" className="section"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        >
             <h2 className="title is-4">
                 Projects
             </h2>
-            <div className="tile is-vertical is-ancestor">
-                <div className="tile is-parent is-vertical">
-                    <div className="tile is-child box card">
+            <div className="tile is-ancestor">
+                <div className="tile is-parent is-flex-wrap-wrap">
+                    <div id="child" className="tile is-child box card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <div className="card-image">
                             <figure className="image is-4by3">
                                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
@@ -29,7 +41,13 @@ function Projects() {
                             <a className="button is-primary">Source Code</a>
                         </div>
                     </div>
-                    <div className="tile is-child box card">
+                    <div className="tile is-child box card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <div className="card-image">
                             <figure className="image is-4by3">
                                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
@@ -50,9 +68,13 @@ function Projects() {
                             <a className="button is-primary">Source Code</a>
                         </div>
                     </div>
-                </div>
-                <div className="tile is-parent is-vertical">
-                    <div className="tile is-child box card">
+                    <div className="tile is-child box card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <div className="card-image">
                             <figure className="image is-4by3">
                                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
@@ -73,7 +95,13 @@ function Projects() {
                             <a className="button is-primary">Source Code</a>
                         </div>
                     </div>
-                    <div className="tile is-child box card">
+                    <div className="tile is-child box card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <div className="card-image">
                             <figure className="image is-4by3">
                                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>

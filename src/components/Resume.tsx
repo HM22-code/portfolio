@@ -2,7 +2,13 @@
 function Resume() {
 
     return (
-        <section id="resume" className="section box">
+        <section id="resume" className="section box"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        >
             <h2 className="title is-4">
                 Resume
             </h2>

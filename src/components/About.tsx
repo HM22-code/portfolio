@@ -2,7 +2,13 @@
 function About() {
   
     return (
-        <section id="about" className="section">
+        <div id="about" className="section"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+        >
             <h2 className="title is-4">
                 About me
             </h2>
@@ -14,7 +20,7 @@ function About() {
                 I want to progress in IT. I'm always looking to improve in what I do or produce in general,
                 as well as being able to work independently and listen to others when I'm working in a team.
             </p>
-        </section>
+        </div>
     )
 }
 

@@ -1,25 +1,40 @@
 import profilePicture from "/assets/img/profile-picture.jpg";
-import Icon from '@mdi/react';
-import { mdiLinkedin } from '@mdi/js';
+import Typical from 'react-typical';
 
 function Banner() {
 
     return (
-        <section className="section hero">
-            <div className="columns">
-                <div className="column is-one-fifth">
-                    <figure className="image is-fullwidth">
-                        <img className="is-rounded " src={profilePicture} />
-                    </figure>
-                </div>
-                <div className="column section">
-                    <h2 className="title is-3">
-                        Hi, I’m Hugo 👋
-                    </h2>
-                    <p className="subtitle">
-                        Welcome to my portfolio ! 
-                    </p>
-                    <div className="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="hugo-montandon" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/hugo-montandon?trk=profile-badge"><Icon path={mdiLinkedin} title="Linkedin" size={1} />LinkedIn Profile</a></div>
+        <section id="banner" className="hero is-fullheight section">
+            <div className="hero-body">
+                <div className="columns is-vcentered box">
+                    <div className="column is-one-fifth">
+                        <figure className="image is-fullwidth" 
+                            data-aos="zoom-in"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                        >
+                            <img className="is-rounded " src={profilePicture} />
+                        </figure>
+                    </div>
+                    <div className="column">
+                        <h2 className="title is-4">
+                            Hi, I’m Hugo <span className="constant-gentle-tilt-shake">👋</span>
+                        </h2>
+                        <p className="subtitle">
+                            <Typical
+                                steps={[
+                                    "Welcome to my portfolio !", 2000, 
+                                    "I'm a Full Stack Developer", 2000,
+                                    "I'm a Web Developer", 2000,
+                                    "I'm a Software Developer", 2000,
+                                    "I'm a Mobile Developer", 2000,
+                                ]}
+                                loop={Infinity}
+                                wrapper="p"
+                            />
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

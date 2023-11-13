@@ -16,7 +16,13 @@ function Navbar() {
     }
 
     return (
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            data-aos-delay="3000"
+            data-aos-anchor-placement="top-bottom"
+        >
             <div className="navbar-brand">
                 <a href="https://github.com/HM22-code" className="navbar-item">
                     <img src={profileLogo} />

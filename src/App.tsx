@@ -5,18 +5,24 @@ import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
-	
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
 	return (
 		<>
 			<Navbar />
 			<Banner />
+            <Social />
 			<About />
 			<Resume />
 			<Projects />
-			<Social />
 			<Footer />	
 		</>
 	);

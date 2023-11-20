@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+
+    const { t } = useTranslation();
     
     return (
         <section id="projects" className="section"
@@ -10,7 +13,7 @@ function Projects() {
             data-aos-easing="ease-in-out"
         >
             <h2 className="title is-4">
-                Projects
+                {t('projects.title')}
             </h2>
             <div className="tile is-ancestor">
                 <div className="tile is-parent is-flex-wrap-wrap">
@@ -29,16 +32,15 @@ function Projects() {
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Title</p>
-                                    <p className="subtitle is-6">Subtitle</p>
+                                    <p className="title is-4">{t('projects.project')}</p>
+                                    <p className="subtitle is-6">{t('projects.subtitle')}</p>
                                 </div>
                             </div>
                             <div className="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                                {t('projects.description')}
                             </div>
                             <br/>
-                            <a className="button is-primary">Source Code</a>
+                            <a className="button is-primary">{t('projects.button')}</a>
                         </div>
                     </div>
                     <div className="tile is-child box card"
@@ -56,16 +58,15 @@ function Projects() {
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Title</p>
-                                    <p className="subtitle is-6">Subtitle</p>
+                                    <p className="title is-4">{t('projects.project')}</p>
+                                    <p className="subtitle is-6">{t('projects.subtitle')}</p>
                                 </div>
                             </div>
                             <div className="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                                {t('projects.description')}
                             </div>
                             <br/>
-                            <a className="button is-primary">Source Code</a>
+                            <a className="button is-primary">{t('projects.button')}</a>
                         </div>
                     </div>
                     <div className="tile is-child box card"
@@ -83,16 +84,15 @@ function Projects() {
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Title</p>
-                                    <p className="subtitle is-6">Subtitle</p>
+                                    <p className="title is-4">{t('projects.project')}</p>
+                                    <p className="subtitle is-6">{t('projects.subtitle')}</p>
                                 </div>
                             </div>
                             <div className="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                                {t('projects.description')}
                             </div>
                             <br/>
-                            <a className="button is-primary">Source Code</a>
+                            <a className="button is-primary">{t('projects.button')}</a>
                         </div>
                     </div>
                     <div className="tile is-child box card"
@@ -110,16 +110,15 @@ function Projects() {
                         <div className="card-content">
                             <div className="media">
                                 <div className="media-content">
-                                    <p className="title is-4">Title</p>
-                                    <p className="subtitle is-6">Subtitle</p>
+                                    <p className="title is-4">{t('projects.project')}</p>
+                                    <p className="subtitle is-6">{t('projects.subtitle')}</p>
                                 </div>
                             </div>
                             <div className="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                                {t('projects.description')}
                             </div>
                             <br/>
-                            <a className="button is-primary">Source Code</a>
+                            <a className="button is-primary">{t('projects.button')}</a>
                         </div>
                     </div>
                 </div>

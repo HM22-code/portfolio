@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
 
 function Resume() {
+
+    const { t } = useTranslation();
 
     return (
         <section id="resume" className="section box"
@@ -10,22 +13,25 @@ function Resume() {
             data-aos-easing="ease-in-out"
         >
             <h2 className="title is-4">
-                Resume
+                {t('resume.title')}
             </h2>
             <div className="columns">
+
                 <div className="column">
-                    <h3 className="subtitle is-6">Experiences</h3>
+
+                    <h3 className="subtitle is-6">{t('resume.subtitle1')}</h3>
+
                     <div className="timeline">
                         <header className="timeline-header">
-                            <span className="tag is-medium is-primary">Start</span>
+                            <span className="tag is-medium is-primary">{t('resume.start')}</span>
                         </header>
                         <div className="timeline-item">
                             <div className="timeline-marker"></div>
                             <div className="timeline-content">
-                                <p className="heading">April 2022 - June 2022</p>
-                                <p className="is-size-5 has-text-weight-bold">Developer - CPage</p>
-                                <p className="is-italic is-size-8">Dijon, Bourgogne-Franche-Comté, France</p>
-                                <p className="is-size-6">Keywords : Java Swing · SQL · Software Developer · Java · Oracle SQL Developer</p>
+                                <p className="heading">{t('resume.period1')}</p>
+                                <p className="is-size-5 has-text-weight-bold">{t('resume.work1')}</p>
+                                <p className="is-italic is-size-8">{t('resume.location1')}</p>
+                                <p className="is-size-6">{t('resume.keywords1')}</p>
                             </div>
                         </div>
                         <header className="timeline-header">
@@ -34,30 +40,33 @@ function Resume() {
                         <div className="timeline-item">
                             <div className="timeline-marker"></div>
                             <div className="timeline-content">
-                                <p className="heading">September 2022 - September 2023</p>
-                                <p className="is-size-5 has-text-weight-bold">Developer - CPage</p>
-                                <p className="is-italic is-size-8">Dijon, Bourgogne-Franche-Comté, France</p>
-                                <p className="is-size-6">Keywords : Spring Boot · TypeScript · Angular · Java · Oracle SQL Developer</p>
+                                <p className="heading">{t('resume.period2')}</p>
+                                <p className="is-size-5 has-text-weight-bold">{t('resume.work2')}</p>
+                                <p className="is-italic is-size-8">{t('resume.location2')}</p>
+                                <p className="is-size-6">{t('resume.keywords2')}</p>
                             </div>
                         </div>
                         <div className="timeline-header">
-                            <span className="tag is-medium is-primary">End</span>
+                            <span className="tag is-medium is-primary">{t('resume.end')}</span>
                         </div>
                     </div>
                 </div>
+
                 <div className="column">
-                    <h3 className="subtitle is-6">Trainings</h3>
+
+                    <h3 className="subtitle is-6">{t('resume.subtitle2')}</h3>
+
                     <div className="timeline">
                         <header className="timeline-header">
-                            <span className="tag is-medium is-primary">Start</span>
+                            <span className="tag is-medium is-primary">{t('resume.start')}</span>
                         </header>
                         <div className="timeline-item">
                             <div className="timeline-marker"></div>
                             <div className="timeline-content">
-                                <p className="heading">September 2020 - June 2022</p>
-                                <p className="is-size-5 has-text-weight-bold">IT Computing University Degree - IUT Dijon</p>
-                                <p className="is-italic is-size-8">Dijon, Bourgogne-Franche-Comté, France</p>
-                                <p className="is-size-6">Keywords : SQL · Microsoft Office · C# · Java · JavaScript</p>
+                                <p className="heading">{t('resume.period3')}</p>
+                                <p className="is-size-5 has-text-weight-bold">{t('resume.work3')}</p>
+                                <p className="is-italic is-size-8">{t('resume.location3')}</p>
+                                <p className="is-size-6">{t('resume.keywords3')}</p>
                             </div>
                         </div>
                         <header className="timeline-header">
@@ -66,14 +75,14 @@ function Resume() {
                         <div className="timeline-item">
                             <div className="timeline-marker"></div>
                             <div className="timeline-content">
-                                <p className="heading">October 2022 - August 2023</p>
-                                <p className="is-size-5 has-text-weight-bold">Application Developer Bachelor - CESI</p>
-                                <p className="is-italic is-size-8">Dijon, Bourgogne-Franche-Comté, France</p>
-                                <p className="is-size-6">Keywords : Software development · Project management · Spring Boot · React Native · Angular</p>
+                                <p className="heading">{t('resume.period4')}</p>
+                                <p className="is-size-5 has-text-weight-bold">{t('resume.work4')}</p>
+                                <p className="is-italic is-size-8">{t('resume.location4')}</p>
+                                <p className="is-size-6">{t('resume.keywords4')}</p>
                             </div>
                         </div>
                         <div className="timeline-header">
-                            <span className="tag is-medium is-primary">End</span>
+                            <span className="tag is-medium is-primary">{t('resume.end')}</span>
                         </div>
                     </div>
                 </div>

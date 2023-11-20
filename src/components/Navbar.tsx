@@ -2,9 +2,12 @@ import Icon from '@mdi/react';
 import { mdiDownload, mdiThemeLightDark } from '@mdi/js';
 import cv from "/assets/pdf/cv.pdf";
 import profileLogo from "/assets/img/profile-logo.png";
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
     
+    const { t } = useTranslation();
+
     function toggleMenu(): void {
         const $target = document.getElementById('navbarToggle');
         $target?.classList.toggle('is-active');
@@ -39,16 +42,16 @@ function Navbar() {
             <div id="navbarToggle" className="navbar-menu">
                 <div className="navbar-start">
                     <a href="#about" className="navbar-item">
-                        About
+                        {t('navbar.part1')}
                     </a>
                     <a href="#resume" className="navbar-item">
-                        Resume
+                        {t('navbar.part2')}
                     </a>
                     <a href="#projects" className="navbar-item">
-                        Projects
+                        {t('navbar.part3')}
                     </a>
                     <a href="#social" className="navbar-item">
-                        Social
+                        {t('navbar.part4')}
                     </a>  
                 </div>
                 <div className="navbar-end">
@@ -59,7 +62,7 @@ function Navbar() {
                                     <Icon path={mdiDownload} title="Download CV" size={1} />
                                 </span>
                                 <span>
-                                    Download CV
+                                    {t('navbar.part5')}
                                 </span>
                             </span>
                         </a>

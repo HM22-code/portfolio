@@ -1,0 +1,58 @@
+{
+    "translation": {
+        "navbar": {
+            "part1": "À propos",
+            "part2": "Curriculum Vitae",
+            "part3": "Projets",
+            "part4": "Réseaux sociaux",
+            "part5": "Télécharger CV" 
+        },
+        "banner": {
+            "title": "Bonjour, Je m'apelle Hugo",
+            "subtitle1": "Bienvenue sur mon portfolio !",
+            "subtitle2": "Je suis un développeur Full Stack",
+            "subtitle3": "Je suis un développeur Web",
+            "subtitle4": "Je suis un développeur Logiciel", 
+            "subtitle5": "Je suis un développeur Mobile"
+        },
+        "about": {
+            "title": "À propos",
+            "description": "Je m'appelle Hugo. Je suis développeur full-stack. Actuellement, en tant qu'étudiant, je suis en licence conception et développement d'applications à Dijon, dans le but de me former dans ce domaine de l'informatique. Je suis intéressé par 💻 les nouvelles technologies et 👨‍💻 l'informatique en général. Je suis passionné par 🎮 les jeux vidéo et leurs 🎨 domaines créatifs. Je suis curieux de nature et j'ai envie de progresser dans l'informatique. Je cherche toujours à m'améliorer dans ce que je fais ou produis en général, tout en étant capable de travailler de manière autonome et d'écouter les autres lorsque je travaille en équipe."
+        },
+        "resume": {
+            "title": "Curriculum Vitae",
+            "subtitle1": "Expériences",
+            "subtitle2": "Formations",
+            "start": "Début",
+            "date": "2022",
+            "end": "Fin",
+            "period1": "Avril 2022 - Juin 2022",
+            "work1": "Développeur - CPage",
+            "location1": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords1": "Mots-clés : Java Swing · SQL · Développement Logiciel · Java · Oracle SQL Developer",
+            "period2": "Septembre 2022 - Septembre 2023",
+            "work2": "Développeur - CPage",
+            "location2": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords2": "Mots-clés : Spring Boot · TypeScript · Angular · Java · Oracle SQL Developer",
+            "period3": "Septembre 2020 - Juin 2022",
+            "work3": "DUT informatique - IUT Dijon",
+            "location3": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords3": "Mots-clés : SQL · Microsoft Office · C# · Java · JavaScript",
+            "period4": "Octobre 2022 - Août 2023",
+            "work4": "Bachelor Concepteur Développeur d'Applications - CESI",
+            "location4": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords4": "Mots-clés : Développement Logiciel · Gestion de projet · Spring Boot · React Native · Angular"
+            
+        },
+        "projects": {
+            "title": "Projets",
+            "project": "Titre",
+            "subtitle": "Sous-titre",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris",
+            "button": "Code Source" 
+        },
+        "footer": {
+            "title": "Fait avec 💙 par HM22-code"
+        }
+    }
+  }

@@ -1,12 +1,12 @@
 import Icon from '@mdi/react';
-import { mdiDownload, mdiThemeLightDark } from '@mdi/js';
+import { mdiDownload, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
 import cv from "/assets/pdf/cv.pdf";
 import profileLogo from "/assets/img/profile-logo.png";
 import { useTranslation } from 'react-i18next';
 
 function Navbar() {
     
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     function toggleMenu(): void {
         const $target = document.getElementById('navbarToggle');
@@ -35,9 +35,6 @@ function Navbar() {
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
-                <a className="navbar-item" onClick={toggleTheme}>
-                    <Icon path={mdiThemeLightDark} size={1} />
-                </a>
             </div>
             <div id="navbarToggle" className="navbar-menu">
                 <div className="navbar-start">
@@ -52,7 +49,23 @@ function Navbar() {
                     </a>
                     <a href="#social" className="navbar-item">
                         {t('navbar.part4')}
-                    </a>  
+                    </a>
+                    <a className="navbar-item" onClick={toggleTheme}>
+                    <Icon path={mdiThemeLightDark} size={1} />
+                </a>
+                <div className='navbar-item has-dropdown is-hoverable'>
+                    <a className="navbar-link is-arrowless">
+                        <Icon path={mdiTranslate} size={1} />
+                    </a>
+                    <div className="navbar-dropdown">
+                        <a className="navbar-item" onClick={() => {i18n.changeLanguage("en")}}>
+                            {t('navbar.part6')}
+                        </a>
+                        <a className="navbar-item" onClick={() => {i18n.changeLanguage("fr")}}>
+                            {t('navbar.part7')}
+                        </a>
+                    </div>
+                </div>  
                 </div>
                 <div className="navbar-end">
                     <div className="navbar-item">

@@ -16,7 +16,7 @@ function App() {
 
     useEffect(() => {
         AOS.init();
-        setTimeout(() => setLoading(false), 3000);
+        setTimeout(() => setLoading(false), 1000);
     }, [])
 
 	return (

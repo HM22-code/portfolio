@@ -41,18 +41,6 @@
     gap: 10px;
 }
 
-.constant-gentle-tilt-shake {
-  animation: tilt-shaking 0.25s infinite;
-}
-
-@keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
-
 $dark-light:#4d4d4d;
 
 body.dark {
@@ -80,6 +68,7 @@ body.dark footer,
 body.dark nav {
     background: $dark-light;
 }
+
 body.dark div.navbar-menu{
     background: $dark-light;
 }
@@ -100,4 +89,19 @@ body.dark div.column{
 
 body.dark .box{
     background: $dark;
+}
+
+body.dark .navbar-item {
+    background-color: $dark-light;
+    color: $light;
+}
+
+body.dark .navbar-link {
+    background-color: $dark-light;
+    color: $light;
+}
+
+body.dark .navbar-dropdown {
+    background-color: $dark-light;
+    color: $light;
 }

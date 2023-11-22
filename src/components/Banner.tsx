@@ -21,10 +21,10 @@ function Banner() {
                         </figure>
                     </div>
                     <div className="column">
-                        <h2 className="title is-4">
-                            {t('banner.title')} <span className="constant-gentle-tilt-shake">👋</span>
+                        <h2 className="title is-4 is-size-7-mobile is-size-3-tablet">
+                            {t('banner.title')} <span>👋</span>
                         </h2>
-                        <p className="subtitle">
+                        <p className="subtitle is-size-7-mobile is-size-4-tablet">
                             <Typical
                                 steps={[
                                     t('banner.subtitle1'), 2000, 

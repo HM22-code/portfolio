@@ -1,6 +1,6 @@
 import reactLogo from "/assets/svg/react.svg";
 import viteLogo from "/assets/svg/vite.svg";
-import bulmaLogo from "/assets/img/bulma-logo.png";
+import bulmaLogo from "/assets/img/bulma.png";
 import { useTranslation } from 'react-i18next';
 
 function Footer() {
@@ -9,10 +9,11 @@ function Footer() {
 
   return (
     <footer className="footer">
-        <div className="level">
+        <div className="level is-mobile">
             <p className="level-item">{t('footer.title')}</p>
         </div>
-        <div className="level">
+        <br/>
+        <div className="level is-mobile">
             <a href="https://vitejs.dev" target="_blank" className="level-item">
                 <img src={viteLogo} className="image logo vite" alt="Vite logo" />
             </a>
@@ -20,7 +21,7 @@ function Footer() {
                 <img src={reactLogo} className="image logo react" alt="React logo" />
             </a>
             <a href="https://bulma.io" className="level-item" >
-                <img src={bulmaLogo} className="image" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
+                <img src={bulmaLogo} className="image logo bulma" alt="Bulma logo" />
             </a>
         </div>
     </footer>

@@ -19,7 +19,7 @@ function Resume() {
 
                 <div className="column">
 
-                    <h3 className="subtitle is-6">{t('resume.subtitle1')}</h3>
+                    <h3 className="subtitle is-6 is-underlined">{t('resume.subtitle1')}</h3>
 
                     <div className="timeline">
                         <header className="timeline-header">
@@ -54,7 +54,7 @@ function Resume() {
 
                 <div className="column">
 
-                    <h3 className="subtitle is-6">{t('resume.subtitle2')}</h3>
+                    <h3 className="subtitle is-6 is-underlined">{t('resume.subtitle2')}</h3>
 
                     <div className="timeline">
                         <header className="timeline-header">

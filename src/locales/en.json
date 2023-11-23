@@ -48,10 +48,18 @@
         },
         "projects": {
             "title": "Projects",
-            "project": "Title",
-            "subtitle": "Subtitle",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris",
-            "button": "Source Code" 
+            "project1": "RPG-idea",
+            "subtitle1": "Angular . Angular Material",
+            "description1": "A RPG videogame project manager UI made with Angular.",
+            "button1": "Source Code",
+            "project2": "Accro'Fun",
+            "subtitle2": "React . Tailwind",
+            "description2": "A sample project made with React and Tailwind.",
+            "button2": "Source Code",
+            "project3": "RR-App",
+            "subtitle3": "React Native",
+            "description3": "A web and mobile app to share resources made with React Native.",
+            "button3": "Source Code" 
         },
         "footer": {
             "title": "Made with 💙 by HM22-code"

@@ -1,18 +1,6 @@
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/bulma-timeline/src/sass/index.sass';
 
-.logo {
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo.vite:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
 	from {
 		transform: rotate(0deg);
@@ -28,6 +16,30 @@
 	}
 }
 
+$dark-light:#4d4d4d;
+
+.logo {
+	will-change: filter;
+	transition: filter 300ms;
+}
+.logo.vite, .logo.react {
+    height: 2em;
+    width: 2em;
+}
+.logo.bulma {
+    height: 2em;
+    width: 4em;
+}
+.logo.vite:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
 #banner {
     background: rgb(0,209,178);
     background: radial-gradient(circle, rgba(0,209,178,1) 0%, rgba(135,164,235,1) 100%);
@@ -37,11 +49,9 @@
     background-color: lightblue;
 }
 
-.is-parent {
-    gap: 10px;
+body .box {
+    box-shadow: 0px 0px 3px 1px rgb(0,209,178, 0.2);
 }
-
-$dark-light:#4d4d4d;
 
 body.dark {
     background-color: $dark;

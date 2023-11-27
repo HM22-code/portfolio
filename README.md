@@ -2,14 +2,9 @@
 
 ### Welcome to my portfolio ! 😄
 
-## 🔍 About me
+## 🔍 About
 
-My name's Hugo. 
-I'm a developer and a student. Currently, I'm learning about software and application development.
-I'm interested in 💻 new technologies and 👨‍💻 computer science in general. 
-I'm passionate about 🎮 video games and their 🎨 creative fields. 
-I'm curious and I want to progress in computer science. 
-I'm always looking to improve in what I do or produce in general.
+A portfolio built with Vite using React and Bulma CSS which showcase my work and my skills
    
 ## 📫 Connect with me
 

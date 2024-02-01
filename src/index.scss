@@ -1,5 +1,4 @@
-@import '../node_modules/bulma/bulma.sass';
-@import '../node_modules/bulma-timeline/src/sass/index.sass';
+
 
 @keyframes logo-spin {
 	from {
@@ -17,6 +16,24 @@
 }
 
 $dark-light:#4d4d4d;
+$primary: #f09b65;
+$secondary: #8f7a6b;
+$tertiary: #f8d1b9;
+$link: #f09b65;
+$vite-color: #646cffaa;
+$react-color: #61dafbaa;
+$bulma-color: #59d2d6aa;
+
+@import '../node_modules/bulma/bulma.sass';
+@import '../node_modules/bulma-timeline/src/sass/index.sass';
+
+a {
+    color: $secondary;
+}
+
+a:hover {
+    color: $primary;
+}
 
 .logo {
 	will-change: filter;
@@ -31,26 +48,38 @@ $dark-light:#4d4d4d;
     width: 4em;
 }
 .logo.vite:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
+	filter: drop-shadow(0 0 2em $vite-color);
 }
 .logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
+	filter: drop-shadow(0 0 2em $react-color);
 }
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
+.logo.bulma:hover {
+    filter: drop-shadow(0 0 2em $bulma-color);
+}
+
+.button.is-primary {
+    background-color: $primary;
+}
+
+.navbar-item:hover {
+    color: $primary;
+}
+
+.timeline-header {
+    color: $primary;
+}
+
+.title {
+    color: $primary;
 }
 
 #banner {
-    background: rgb(0,209,178);
-    background: radial-gradient(circle, rgba(0,209,178,1) 0%, rgba(135,164,235,1) 100%);
+    background: $primary;
+    background: radial-gradient(circle, $primary 0%, $secondary 100%);
 }
 
 #social {
-    background-color: lightblue;
-}
-
-body .box {
-    box-shadow: 0px 0px 3px 1px rgb(0,209,178, 0.2);
+    background-color: $tertiary;
 }
 
 body.dark {
@@ -58,9 +87,12 @@ body.dark {
     color: $light;
 }
 
-body.dark .subtitle,
-body.dark .title {
+body.dark .subtitle {
     color: $light;
+}
+
+body.dark .title {
+    color: $primary;
 }
 
 body.dark button {

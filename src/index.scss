@@ -73,6 +73,19 @@ a:hover {
     color: $primary;
 }
 
+.card-image {
+    opacity: 0.6;
+                  transition: opacity .55s ease-in-out;
+                  -moz-transition: opacity .55s ease-in-out;
+                  -webkit-transition: opacity .55s ease-in-out;
+}
+.card-image:hover {
+    opacity: 1.0;
+                  transition: opacity .55s ease-in-out;
+                  -moz-transition: opacity .55s ease-in-out;
+                  -webkit-transition: opacity .55s ease-in-out;
+}
+
 #banner {
     background: $primary;
     background: radial-gradient(circle, $primary 0%, $secondary 100%);

@@ -28,11 +28,11 @@ function Projects() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                 >
-                    <div className="card-image">
+                    <a href="https://github.com/HM22-code/RPG-idea" className="card-image">
                         <figure className="image is-4by3">
                             <img src={project1} alt="Placeholder image" height="960" width="1280"/>
                         </figure>
-                    </div>
+                    </a>
                     <div className="card-content">
                         <div className="media">
                             <div className="media-content">
@@ -53,11 +53,11 @@ function Projects() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                 >
-                    <div className="card-image">
+                    <a href="https://hm22-code.github.io/static-web-page-showcase/" className="card-image">
                         <figure className="image is-4by3">
                             <img src={project2} alt="Placeholder image" height="960" width="1280"/>
                         </figure>
-                    </div>
+                    </a>
                     <div className="card-content">
                         <div className="media">
                             <div className="media-content">
@@ -78,11 +78,11 @@ function Projects() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                 >
-                    <div className="card-image">
+                    <a href="https://jude-erdrick.itch.io/ex-raceone" className="card-image">
                         <figure className="image is-4by3">
                             <img src={project3} alt="Placeholder image" height="960" width="1280"/>
                         </figure>
-                    </div>
+                    </a>
                     <div className="card-content">
                         <div className="media">
                             <div className="media-content">
@@ -95,8 +95,6 @@ function Projects() {
                         </div>
                     </div>
                 </div>
-
-                
 
             </div>
         </section>

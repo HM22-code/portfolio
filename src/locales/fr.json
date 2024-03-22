@@ -56,9 +56,9 @@
             "subtitle2": "React . Tailwind",
             "description2": "Un exemple de projet réalisé avec React et Tailwind.",
             "button2": "Code Source",
-            "project3": "RR-Application",
-            "subtitle3": "React Native",
-            "description3": "Une application web et mobile pour partager des ressources réalisée avec React Native.",
+            "project3": "Ex-raceone",
+            "subtitle3": "Pygame",
+            "description3": "Un jeu space shooter web et de bureau.",
             "button3": "Code Source"
         },
         "footer": {

@@ -1,7 +1,5 @@
 import Icon from '@mdi/react';
-import { mdiLinkedin } from '@mdi/js';
-import { mdiGithub } from '@mdi/js';
-import { mdiGmail } from '@mdi/js';
+import { mdiLinkedin, mdiGithub, mdiGmail  } from '@mdi/js';
 
 function Social() {
     

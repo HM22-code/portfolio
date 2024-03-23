@@ -1,5 +1,3 @@
-
-
 @keyframes logo-spin {
 	from {
 		transform: rotate(0deg);
@@ -30,7 +28,6 @@ $bulma-color: #59d2d6aa;
 a {
     color: $secondary;
 }
-
 a:hover {
     color: $primary;
 }
@@ -74,16 +71,11 @@ a:hover {
 }
 
 .card-image {
-    opacity: 0.6;
-                  transition: opacity .55s ease-in-out;
-                  -moz-transition: opacity .55s ease-in-out;
-                  -webkit-transition: opacity .55s ease-in-out;
+    transition: 400ms ease 100ms;
 }
 .card-image:hover {
-    opacity: 1.0;
-                  transition: opacity .55s ease-in-out;
-                  -moz-transition: opacity .55s ease-in-out;
-                  -webkit-transition: opacity .55s ease-in-out;
+    filter: blur(4px);
+    transition: 1s, 1s;
 }
 
 #banner {
@@ -99,63 +91,50 @@ body.dark {
     background-color: $dark;
     color: $light;
 }
-
 body.dark .subtitle {
     color: $light;
 }
-
 body.dark .title {
     color: $primary;
 }
-
 body.dark button {
     background: $light;
     color: $dark;
 }
-
 body.dark section {
     background: $dark;
     color: $light;
 }
-
 body.dark footer.div,
 body.dark footer,
 body.dark nav {
     background: $dark-light;
 }
-
 body.dark div.navbar-menu{
     background: $dark-light;
 }
-
 body.dark nav a {
     color: $light;
 }
-
 body.dark div.tile{
     background: $dark;
     color: $light;
 }
-
 body.dark div.column{
     background: $dark;
     color: $light;
 }
-
 body.dark .box{
     background: $dark;
 }
-
 body.dark .navbar-item {
     background-color: $dark-light;
     color: $light;
 }
-
 body.dark .navbar-link {
     background-color: $dark-light;
     color: $light;
 }
-
 body.dark .navbar-dropdown {
     background-color: $dark-light;
     color: $light;

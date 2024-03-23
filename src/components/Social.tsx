@@ -1,7 +1,5 @@
 import Icon from '@mdi/react';
-import { mdiLinkedin } from '@mdi/js';
-import { mdiGithub } from '@mdi/js';
-import { mdiGmail } from '@mdi/js';
+import { mdiLinkedin, mdiGithub, mdiGmail, mdiController } from '@mdi/js';
 
 function Social() {
     
@@ -31,7 +29,15 @@ function Social() {
                     data-aos-easing="ease-in-out"
                 >
                     <Icon path={mdiGmail} title="Gmail" size={2} />
-                </a>     
+                </a>
+                <a href="https://jude-erdrick.itch.io/" className='level-item link is-primary'
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
+                    <Icon path={mdiController} title="Itch.io" size={2} />
+                </a>       
             </div>     
         </section>
   )

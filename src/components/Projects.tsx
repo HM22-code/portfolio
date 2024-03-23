@@ -30,7 +30,7 @@ function Projects() {
                 >
                     <a href="https://github.com/HM22-code/RPG-idea" className="card-image">
                         <figure className="image is-4by3">
-                            <img src={project1} alt="Placeholder image" height="960" width="1280"/>
+                            <img src={project1} alt="Project preview" height="960" width="1280"/>
                         </figure>
                     </a>
                     <div className="card-content">
@@ -55,7 +55,7 @@ function Projects() {
                 >
                     <a href="https://hm22-code.github.io/static-web-page-showcase/" className="card-image">
                         <figure className="image is-4by3">
-                            <img src={project2} alt="Placeholder image" height="960" width="1280"/>
+                            <img src={project2} alt="Project preview" height="960" width="1280"/>
                         </figure>
                     </a>
                     <div className="card-content">
@@ -80,7 +80,7 @@ function Projects() {
                 >
                     <a href="https://jude-erdrick.itch.io/ex-raceone" className="card-image">
                         <figure className="image is-4by3">
-                            <img src={project3} alt="Placeholder image" height="960" width="1280"/>
+                            <img src={project3} alt="Project preview" height="960" width="1280"/>
                         </figure>
                     </a>
                     <div className="card-content">

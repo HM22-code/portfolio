@@ -28,7 +28,7 @@ function Navbar() {
         >
             <div className="navbar-brand">
                 <a href="https://github.com/HM22-code" className="navbar-item">
-                    <img src={profileLogo} />
+                    <img alt="Profile logo" src={profileLogo} />
                 </a>
                 <a onClick={toggleMenu} role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarToggle">
                     <span aria-hidden="true"></span>

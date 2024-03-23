@@ -74,16 +74,11 @@ a:hover {
 }
 
 .card-image {
-    opacity: 0.6;
-                  transition: opacity .55s ease-in-out;
-                  -moz-transition: opacity .55s ease-in-out;
-                  -webkit-transition: opacity .55s ease-in-out;
+    transition: 400ms ease 100ms;
 }
 .card-image:hover {
-    opacity: 1.0;
-                  transition: opacity .55s ease-in-out;
-                  -moz-transition: opacity .55s ease-in-out;
-                  -webkit-transition: opacity .55s ease-in-out;
+    filter: blur(4px);
+    transition: 1s, 1s;
 }
 
 #banner {

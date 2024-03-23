@@ -17,7 +17,7 @@ function Banner() {
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                         >
-                            <img className="is-rounded " src={profilePicture} />
+                            <img className="is-rounded " alt="Profile" src={profilePicture} />
                         </figure>
                     </div>
                     <div className="column">

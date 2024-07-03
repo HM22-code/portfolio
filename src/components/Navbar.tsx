@@ -1,6 +1,5 @@
 import Icon from '@mdi/react';
 import { mdiLinkedin, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
-import profileLogo from "/assets/img/profile-logo.png";
 import { useTranslation } from 'react-i18next';
 
 function Navbar() {
@@ -27,7 +26,7 @@ function Navbar() {
         >
             <div className="navbar-brand">
                 <a href="https://github.com/HM22-code" className="navbar-item">
-                    <img alt="Profile logo" src={profileLogo} />
+                    <p className="profile-name">HM22-code</p>
                 </a>
                 <a onClick={toggleMenu} role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarToggle">
                     <span aria-hidden="true"></span>

@@ -1,7 +1,5 @@
 import Icon from '@mdi/react';
-import { mdiDownload, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
-import cv from "/assets/pdf/cv.pdf";
-import profileLogo from "/assets/img/profile-logo.png";
+import { mdiLinkedin, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
 import { useTranslation } from 'react-i18next';
 
 function Navbar() {
@@ -28,7 +26,7 @@ function Navbar() {
         >
             <div className="navbar-brand">
                 <a href="https://github.com/HM22-code" className="navbar-item">
-                    <img alt="Profile logo" src={profileLogo} />
+                    <p className="profile-name">HM22-code</p>
                 </a>
                 <a onClick={toggleMenu} role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarToggle">
                     <span aria-hidden="true"></span>
@@ -69,10 +67,10 @@ function Navbar() {
                 </div>
                 <div className="navbar-end">
                     <div className="navbar-item">
-                        <a href={cv} download className="button is-primary">
+                        <a href="https://www.linkedin.com/in/hugo-montandon/" className="button is-primary">
                             <span className="icon-text">
                                 <span className="icon">
-                                    <Icon path={mdiDownload} title="Download CV" size={1} />
+                                    <Icon path={mdiLinkedin} title="LinkedIn" size={1} />
                                 </span>
                                 <span>
                                     {t('navbar.part5')}

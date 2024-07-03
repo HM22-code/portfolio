@@ -4,8 +4,8 @@ import { mdiLinkedin, mdiGithub, mdiGmail, mdiController } from '@mdi/js';
 function Social() {
     
     return (
-        <section id="social" className="section level is-mobile">
-            <div className='level-left'>
+        <section id="social" className="section level">
+            <div className='level is-mobile'>
                 <a href="https://www.linkedin.com/in/hugo-montandon/" className='level-item link is-primary'
                     data-aos="fade-left"
                     data-aos-delay="50"

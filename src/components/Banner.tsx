@@ -1,5 +1,4 @@
 import profilePicture from "/assets/img/profile-picture.jpg";
-import Typical from 'react-typical';
 import { useTranslation } from 'react-i18next';
 
 function Banner() {
@@ -25,17 +24,7 @@ function Banner() {
                             {t('banner.title')} <span>👋</span>
                         </h2>
                         <p className="subtitle is-size-7-mobile is-size-4-tablet">
-                            <Typical
-                                steps={[
-                                    t('banner.subtitle1'), 2000, 
-                                    t('banner.subtitle2'), 2000,
-                                    t('banner.subtitle3'), 2000,
-                                    t('banner.subtitle4'), 2000,
-                                    t('banner.subtitle5'), 2000,
-                                ]}
-                                loop={Infinity}
-                                wrapper="p"
-                            />
+                            {t('banner.subtitle1')}     
                         </p>
                     </div>
                 </div>

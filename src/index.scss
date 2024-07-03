@@ -1,23 +1,9 @@
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
+/* Override Bulma css */
 
 $dark-light:#4d4d4d;
-$primary: #f09b65;
-$secondary: #8f7a6b;
-$tertiary: #f8d1b9;
-$link: #f09b65;
+$primary: #00a1ff;
+$secondary: #00ff8f;
+$link: $primary;
 $vite-color: #646cffaa;
 $react-color: #61dafbaa;
 $bulma-color: #59d2d6aa;
@@ -30,6 +16,21 @@ a {
 }
 a:hover {
     color: $primary;
+    filter: drop-shadow(0 0 2em $primary);
+    transition: filter 300ms;
+}
+
+.hero-body {
+    justify-content: center;
+}
+
+.profile-name {
+    color: $primary;
+    font-weight: bold;
+}
+.profile-name:hover {
+    filter: drop-shadow(0 0 2em $primary);
+    transition: filter 300ms;
 }
 
 .logo {
@@ -42,7 +43,7 @@ a:hover {
 }
 .logo.bulma {
     height: 2em;
-    width: 4em;
+    width: 6em;
 }
 .logo.vite:hover {
 	filter: drop-shadow(0 0 2em $vite-color);
@@ -63,7 +64,7 @@ a:hover {
 }
 
 .timeline-header {
-    color: $primary;
+    color: $secondary;
 }
 
 .title {
@@ -78,10 +79,33 @@ a:hover {
     transition: 1s, 1s;
 }
 
-#banner {
-    background: linear-gradient(270deg, #b44eb9, #4e84b9);
-    background-size: 400% 400%;
+/* Animation */
 
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.logo.react {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+/* Gradient */
+
+#social {
+    background: rgb(0,161,255);
+    background: radial-gradient(circle, rgba(0,161,255,0.4) 0%, rgba(0,255,143,0.4) 100%);
+}
+
+#banner {
+    background: linear-gradient(270deg, $primary, $secondary);
+    background-size: 400% 400%;
     -webkit-animation: GradientAnimation 30s ease infinite;
     -moz-animation: GradientAnimation 30s ease infinite;
     animation: GradientAnimation 30s ease infinite;
@@ -103,9 +127,7 @@ a:hover {
     100%{background-position:0% 50%}
 }
 
-#social {
-    background-color: $tertiary;
-}
+/* Dark mode */
 
 body.dark {
     background-color: $dark;
@@ -150,6 +172,9 @@ body.dark .box{
 body.dark .navbar-item {
     background-color: $dark-light;
     color: $light;
+}
+body.dark .navbar-item:hover {
+    color: $primary;
 }
 body.dark .navbar-link {
     background-color: $dark-light;

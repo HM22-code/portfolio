@@ -16,7 +16,7 @@ function Banner() {
                             data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                         >
-                            <img className="is-rounded " alt="Profile" src={profilePicture} />
+                            <a href="https://github.com/HM22-code"><img className="is-rounded " alt="Profile" src={profilePicture} /></a>
                         </figure>
                     </div>
                     <div className="column">

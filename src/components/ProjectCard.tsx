@@ -1,4 +1,4 @@
-type Props = {
+type ProjectCardProps = {
     preview: string;
     link: string;
     title: string;
@@ -6,7 +6,7 @@ type Props = {
     description: string;
 }
 
-function ProjectCard(props : Props) {
+function ProjectCard(props : ProjectCardProps) {
     
     return (
         <div className="column m-1 box card"

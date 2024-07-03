@@ -1,6 +1,5 @@
 import Icon from '@mdi/react';
-import { mdiDownload, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
-import cv from "/assets/pdf/cv.pdf";
+import { mdiLinkedin, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
 import profileLogo from "/assets/img/profile-logo.png";
 import { useTranslation } from 'react-i18next';
 
@@ -69,10 +68,10 @@ function Navbar() {
                 </div>
                 <div className="navbar-end">
                     <div className="navbar-item">
-                        <a href={cv} download className="button is-primary">
+                        <a href="https://www.linkedin.com/in/hugo-montandon/" className="button is-primary">
                             <span className="icon-text">
                                 <span className="icon">
-                                    <Icon path={mdiDownload} title="Download CV" size={1} />
+                                    <Icon path={mdiLinkedin} title="LinkedIn" size={1} />
                                 </span>
                                 <span>
                                     {t('navbar.part5')}

@@ -2,6 +2,15 @@ import Icon from '@mdi/react';
 import { mdiLinkedin, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
 import { useTranslation } from 'react-i18next';
 
+function toggleTheme(): void {
+    const $target = document.querySelector('body');
+    $target?.classList.toggle('dark');
+}
+
+if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    toggleTheme()
+}
+
 function Navbar() {
     
     const { t, i18n } = useTranslation();
@@ -9,11 +18,6 @@ function Navbar() {
     function toggleMenu(): void {
         const $target = document.getElementById('navbarToggle');
         $target?.classList.toggle('is-active');
-    }
-
-    function toggleTheme(): void {
-        const $target = document.querySelector('body');
-        $target?.classList.toggle('dark');
     }
 
     return (
@@ -56,10 +60,10 @@ function Navbar() {
                         <Icon path={mdiTranslate} size={1} />
                     </a>
                     <div className="navbar-dropdown">
-                        <a className="navbar-item" onClick={() => {i18n.changeLanguage("en")}}>
+                        <a className="navbar-item" id="language-en" onClick={() => {i18n.changeLanguage("en")}}>
                             {t('navbar.part6')}
                         </a>
-                        <a className="navbar-item" onClick={() => {i18n.changeLanguage("fr")}}>
+                        <a className="navbar-item" id="language-fr" onClick={() => {i18n.changeLanguage("fr")}}>
                             {t('navbar.part7')}
                         </a>
                     </div>

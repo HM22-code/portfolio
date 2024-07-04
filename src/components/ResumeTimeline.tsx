@@ -18,7 +18,7 @@ function ResumeTimeline(props: ResumeTimelineProps) {
     return (
         <div className="timeline">
             <header className="timeline-header">
-                <span className="tag is-medium is-primary">{t('resume.start')}</span>
+                <span className="tag is-medium">{t('resume.start')}</span>
             </header>
             {
                 props.items.map((item: TimelineItem, key) => 
@@ -34,7 +34,7 @@ function ResumeTimeline(props: ResumeTimelineProps) {
                 )
             }
             <div className="timeline-header">
-                <span className="tag is-medium is-primary">{t('resume.end')}</span>
+                <span className="tag is-medium">{t('resume.end')}</span>
             </div>
         </div>
     )

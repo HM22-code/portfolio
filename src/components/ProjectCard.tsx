@@ -9,7 +9,7 @@ type ProjectCardProps = {
 function ProjectCard(props : ProjectCardProps) {
     
     return (
-        <div className="column m-1 box card"
+        <div className="column is-one-third card"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"

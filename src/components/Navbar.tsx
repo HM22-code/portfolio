@@ -56,10 +56,10 @@ function Navbar() {
                         <Icon path={mdiTranslate} size={1} />
                     </a>
                     <div className="navbar-dropdown">
-                        <a className="navbar-item" onClick={() => {i18n.changeLanguage("en")}}>
+                        <a className="navbar-item" id="language-en" onClick={() => {i18n.changeLanguage("en")}}>
                             {t('navbar.part6')}
                         </a>
-                        <a className="navbar-item" onClick={() => {i18n.changeLanguage("fr")}}>
+                        <a className="navbar-item" id="language-fr" onClick={() => {i18n.changeLanguage("fr")}}>
                             {t('navbar.part7')}
                         </a>
                     </div>

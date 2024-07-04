@@ -16,8 +16,6 @@ a {
 }
 a:hover {
     color: $primary;
-    filter: drop-shadow(0 0 2em $primary);
-    transition: filter 300ms;
 }
 
 .hero-body {
@@ -58,13 +56,23 @@ a:hover {
 .button.is-primary {
     background-color: $primary;
 }
+.button.is-primary:hover {
+    filter: drop-shadow(0 0 2em $primary);
+    transition: filter 300ms;
+}
+
+.timeline-header .tag {
+    background-color: $secondary;
+    color: white;
+}
+
+.level-item.link.is-primary.aos-init.aos-animate:hover {
+    filter: drop-shadow(0 0 2em $primary);
+    transition: filter 300ms;
+}
 
 .navbar-item:hover {
     color: $primary;
-}
-
-.timeline-header {
-    color: $secondary;
 }
 
 .title {
@@ -77,6 +85,19 @@ a:hover {
 .card-image:hover {
     filter: blur(4px);
     transition: 1s, 1s;
+}
+
+#profile:hover {
+    filter: drop-shadow(0 0 2em $primary);
+    transition: filter 300ms;
+}
+
+#language-en:hover {
+    color: $primary;
+}
+
+#language-fr:hover {
+    color: $primary;
 }
 
 /* Animation */
@@ -179,6 +200,9 @@ body.dark .navbar-item:hover {
 body.dark .navbar-link {
     background-color: $dark-light;
     color: $light;
+}
+body.dark .navbar-link:hover {
+    color: $primary;
 }
 body.dark .navbar-dropdown {
     background-color: $dark-light;

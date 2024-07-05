@@ -20,11 +20,11 @@ function Banner() {
                         </figure>
                     </div>
                     <div className="column">
-                        <h2 className="title is-4 is-size-7-mobile is-size-3-tablet">
+                        <h2 className="title is-4 is-size-6-mobile is-size-3-tablet">
                             {t('banner.title')} <span>👋</span>
                         </h2>
-                        <p className="subtitle is-size-7-mobile is-size-4-tablet">
-                            {t('banner.subtitle1')}     
+                        <p className="subtitle is-size-6-mobile is-size-4-tablet">
+                            {t('banner.subtitle')}     
                         </p>
                     </div>
                 </div>

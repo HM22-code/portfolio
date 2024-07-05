@@ -28,7 +28,17 @@ function ResumeTimeline(props: ResumeTimelineProps) {
                             <p className="heading">{item.period}</p>
                             <p className="is-size-5 has-text-weight-bold">{item.work}</p>
                             <p className="is-italic is-size-8">{item.location}</p>
-                            <p className="is-size-6">{item.keywords}</p>
+                            
+                                <div className="level-left is-mobile is-flex-direction-row is-flex-wrap-wrap is-flex">
+                                    {
+                                        item.keywords.split(".").map((item, key) =>
+                                            <div className="level-item mr-1 mb-1">
+                                                <span key={key} className="tag is-primary">{item}</span>
+                                            </div>
+                                        )
+                                    }
+                                
+                            </div>
                         </div>
                     </div>
                 )

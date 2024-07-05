@@ -30,7 +30,7 @@ function ProjectCard(props : ProjectCardProps) {
                                 {
                                     props.subtitle.split(".").map((item, key) =>
                                         <div className="level-item">
-                                            <span key={key} className="tag">{item}</span>
+                                            <span key={key} className="tag is-primary">{item}</span>
                                         </div>
                                     )
                                 }

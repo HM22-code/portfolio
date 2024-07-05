@@ -33,7 +33,7 @@ function ResumeTimeline(props: ResumeTimelineProps) {
                                     {
                                         item.keywords.split(".").map((item, key) =>
                                             <div className="level-item mr-1">
-                                                <span key={key} className="tag">{item}</span>
+                                                <span key={key} className="tag is-primary">{item}</span>
                                             </div>
                                         )
                                     }

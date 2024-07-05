@@ -11,11 +11,7 @@
         },
         "banner": {
             "title": "Hi, I’m Hugo",
-            "subtitle1": "Welcome to my portfolio !",
-            "subtitle2": "I'm a Full Stack Developer",
-            "subtitle3": "I'm a Web Developer",
-            "subtitle4": "I'm a Software Developer", 
-            "subtitle5": "I'm a Mobile Developer"
+            "subtitle": "Welcome to my portfolio !"
         },
         "about": {
             "title": "About me",
@@ -31,34 +27,34 @@
             "period1": "April 2022 - June 2022",
             "work1": "Developer - CPage",
             "location1": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords1": "Keywords : Java Swing · SQL · Software Developer · Java · Oracle SQL Developer",
+            "keywords1": "Java Swing.SQL.Software Developer.Java.Oracle SQL Developer",
             "period2": "September 2022 - September 2023",
             "work2": "Developer - CPage",
             "location2": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords2": "Keywords : Spring Boot · TypeScript · Angular · Java · Oracle SQL Developer",
+            "keywords2": "Spring Boot.TypeScript.Angular.Java.Oracle SQL Developer",
             "period3": "September 2020 - June 2022",
             "work3": "IT Computing University Degree - IUT Dijon",
             "location3": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords3": "Keywords : SQL · Microsoft Office · C# · Java · JavaScript",
+            "keywords3": "SQL.Microsoft Office.C#.Java.JavaScript",
             "period4": "October 2022 - August 2023",
             "work4": "Application Developer Bachelor - CESI",
             "location4": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords4": "Keywords : Software development · Project management · Spring Boot · React Native · Angular"
+            "keywords4": "Software development.Project management.Spring Boot.React Native.Angular"
             
         },
         "projects": {
             "title": "Projects",
             "project1": "RPG-idea",
-            "subtitle1": "Angular . Angular Material",
+            "subtitle1": "Angular.Angular Material",
             "description1": "A RPG videogame project manager UI made with Angular.",
             "button1": "Source Code",
             "project2": "Accro'Fun",
-            "subtitle2": "React . Tailwind",
+            "subtitle2": "React.Tailwind",
             "description2": "A sample project made with React and Tailwind.",
             "button2": "Source Code",
             "project3": "Ex-raceone",
             "subtitle3": "Pygame",
-            "description3": "A web and destop space shooter game.",
+            "description3": "A web and desktop space shooter game made with Pygame.",
             "button3": "Source Code" 
         },
         "footer": {

@@ -7,7 +7,7 @@
             "part4": "Social",
             "part5": "LinkedIn",
             "part6": "English",
-            "part7": "French" 
+            "part7": "French"
         },
         "banner": {
             "title": "Hi, I’m Hugo",
@@ -40,7 +40,6 @@
             "work4": "Application Developer Bachelor - CESI",
             "location4": "Dijon, Bourgogne-Franche-Comté, France",
             "keywords4": "Software development.Project management.Spring Boot.React Native.Angular"
-            
         },
         "projects": {
             "title": "Projects",
@@ -55,7 +54,7 @@
             "project3": "Ex-raceone",
             "subtitle3": "Pygame",
             "description3": "A web and desktop space shooter game made with Pygame.",
-            "button3": "Source Code" 
+            "button3": "Source Code"
         },
         "footer": {
             "title": "Made with 💙 by HM22-code"

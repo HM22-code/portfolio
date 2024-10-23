@@ -10,7 +10,7 @@ function Banner() {
             <div className="hero-body">
                 <div className="columns is-vcentered box">
                     <div className="column is-one-fifth">
-                        <figure className="image is-fullwidth" 
+                        <figure className="image is-fullwidth"
                             data-aos="zoom-in"
                             data-aos-delay="50"
                             data-aos-duration="1000"
@@ -24,7 +24,7 @@ function Banner() {
                             {t('banner.title')} <span>👋</span>
                         </h2>
                         <p className="subtitle is-size-6-mobile is-size-4-tablet">
-                            {t('banner.subtitle')}     
+                            {t('banner.subtitle')}
                         </p>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import Icon from '@mdi/react';
 import { mdiLinkedin, mdiGithub, mdiGmail, mdiController } from '@mdi/js';
 
 function Social() {
-    
+
     return (
         <section id="social" className="section level is-mobile">
             <div className='level is-mobile'>
@@ -37,10 +37,10 @@ function Social() {
                     data-aos-easing="ease-in-out"
                 >
                     <Icon path={mdiController} title="Itch.io" size={2} />
-                </a>       
-            </div>     
+                </a>
+            </div>
         </section>
-  )
+    )
 }
 
 export default Social;

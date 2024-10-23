@@ -12,7 +12,7 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
 }
 
 function Navbar() {
-    
+
     const { t, i18n } = useTranslation();
 
     function toggleMenu(): void {
@@ -67,7 +67,7 @@ function Navbar() {
                             {t('navbar.part7')}
                         </a>
                     </div>
-                </div>  
+                </div>
                 </div>
                 <div className="navbar-end">
                     <div className="navbar-item">

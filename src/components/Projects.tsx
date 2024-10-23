@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 function Projects() {
 
     const { t } = useTranslation();
-    
+
     return (
         <section id="projects" className="section"
             data-aos="fade-up"
@@ -21,25 +21,25 @@ function Projects() {
             </h2>
             <br/>
             <div className="columns is-desktop is-multiline">
-                <ProjectCard 
+                <ProjectCard
                     preview={project1}
                     link="https://github.com/HM22-code/RPG-idea"
-                    title={t('projects.project1')} 
-                    subtitle={t('projects.subtitle1')} 
+                    title={t('projects.project1')}
+                    subtitle={t('projects.subtitle1')}
                     description={t('projects.description1')}
                 />
-                <ProjectCard 
+                <ProjectCard
                     preview={project2}
                     link="https://hm22-code.github.io/static-web-page-showcase/"
-                    title={t('projects.project2')} 
-                    subtitle={t('projects.subtitle2')} 
+                    title={t('projects.project2')}
+                    subtitle={t('projects.subtitle2')}
                     description={t('projects.description2')}
                 />
-                <ProjectCard 
+                <ProjectCard
                     preview={project3}
                     link="https://jude-erdrick.itch.io/ex-raceone"
-                    title={t('projects.project3')} 
-                    subtitle={t('projects.subtitle3')} 
+                    title={t('projects.project3')}
+                    subtitle={t('projects.subtitle3')}
                     description={t('projects.description3')}
                 />
             </div>

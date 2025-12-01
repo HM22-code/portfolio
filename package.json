@@ -1,9 +1,12 @@
 {
 	"name": "portfolio",
+	"homepage": "https://hm22-code.github.io/portfolio",
 	"private": true,
 	"version": "1.3.0",
 	"type": "module",
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"dev": "vite",
 		"build": "tsc && vite build --base=./",
 		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -15,6 +18,7 @@
 		"aos": "^2.3.4",
 		"bulma": "^0.9.4",
 		"bulma-timeline": "^3.0.5",
+		"gh-pages": "^6.2.0",
 		"i18next": "^23.7.6",
 		"i18next-browser-languagedetector": "^7.2.0",
 		"react": "^18.2.0",

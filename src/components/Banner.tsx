@@ -1,5 +1,7 @@
 import profilePicture from "/assets/img/profile-picture.jpg";
 import { useTranslation } from 'react-i18next';
+import { mdiArrowDown } from '@mdi/js';
+import Icon from "@mdi/react";
 
 function Banner() {
 
@@ -27,6 +29,11 @@ function Banner() {
                             {t('banner.subtitle')}
                         </p>
                     </div>
+                </div>
+                <div className="scroll-indicator">
+                    <span className="icon has-text-white">
+                        <Icon path={mdiArrowDown} title="scrollArrow" size={1} />
+                    </span>
                 </div>
             </div>
         </section>

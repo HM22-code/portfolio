@@ -20,7 +20,7 @@ function Projects() {
                 {t('projects.title')}
             </h2>
             <br/>
-            <div className="columns is-desktop is-multiline">
+            <div className="columns is-multiline is-half-tablet">
                 <ProjectCard
                     preview={project1}
                     link="https://github.com/HM22-code/RPG-idea"

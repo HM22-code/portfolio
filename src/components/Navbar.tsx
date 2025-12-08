@@ -53,8 +53,8 @@ function Navbar() {
                         {t('navbar.part4')}
                     </a>
                     <a className="navbar-item" onClick={toggleTheme}>
-                    <Icon path={mdiThemeLightDark} size={1} />
-                </a>
+                        <Icon path={mdiThemeLightDark} size={1} />
+                    </a>
                 <div className='navbar-item has-dropdown is-hoverable'>
                     <a className="navbar-link is-arrowless">
                         <Icon path={mdiTranslate} size={1} />

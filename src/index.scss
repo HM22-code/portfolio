@@ -1,6 +1,6 @@
 $dark-light:#4d4d4d;
-$primary: #00a1ff;
-$secondary: #00ff8f;
+$primary: #00ff8f;
+$secondary: #00a1ff;
 $link: $primary;
 $info: $secondary;
 $vite-color: #646cffaa;
@@ -13,10 +13,10 @@ $bulma-color: #59d2d6aa;
 @import '../node_modules/bulma-timeline/src/sass/index.sass';
 
 a {
-    color: $secondary;
+    color: $primary;
 }
 a:hover {
-    color: $primary;
+    color: $secondary;
 }
 
 .hero-body {

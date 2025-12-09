@@ -5,7 +5,9 @@ function About() {
     const { t } = useTranslation();
 
     return (
-        <div id="about" className="section"
+        <section
+            id="about"
+            className="section"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -18,7 +20,7 @@ function About() {
             <p className="has-text-justified">
                 {t('about.description')}
             </p>
-        </div>
+        </section>
     )
 }
 

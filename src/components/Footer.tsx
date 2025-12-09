@@ -14,15 +14,17 @@ function Footer() {
             </div>
             <br/>
             <div className="level is-mobile">
-                <a href="https://vitejs.dev" target="_blank" className="level-item">
-                    <img src={viteLogo} className="image logo vite" alt="Vite logo" />
-                </a>
-                <a href="https://bulma.io" target="_blank" className="level-item" >
-                    <img src={bulmaLogo} className="image logo bulma" alt="Bulma logo" />
-                </a>
-                <a href="https://react.dev" target="_blank" className="level-item">
-                    <img src={reactLogo} className="image logo react" alt="React logo" />
-                </a>
+                <div className="level-left">
+                    <a href="https://vitejs.dev" target="_blank" className="level-item">
+                        <img src={viteLogo} className="image logo vite" alt="Vite logo" />
+                    </a>
+                    <a href="https://bulma.io" target="_blank" className="level-item" >
+                        <img src={bulmaLogo} className="image logo bulma" alt="Bulma logo" />
+                    </a>
+                    <a href="https://react.dev" target="_blank" className="level-item">
+                        <img src={reactLogo} className="image logo react" alt="React logo" />
+                    </a>
+                </div>
             </div>
         </footer>
     )

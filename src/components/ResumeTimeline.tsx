@@ -1,10 +1,4 @@
-
-export interface TimelineItem {
-    period: string;
-    work: string;
-    location: string;
-    keywords: string;
-}
+import { TimelineItem } from "../interfaces/TimelineItem";
 
 type ResumeTimelineProps = {
     items: TimelineItem[];

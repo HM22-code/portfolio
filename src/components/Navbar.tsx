@@ -1,19 +1,12 @@
 import Icon from '@mdi/react';
-import { mdiLinkedin, mdiThemeLightDark, mdiTranslate } from '@mdi/js';
+import { mdiLinkedin, mdiBrightness4, mdiBrightness5, mdiTranslate } from '@mdi/js';
 import { useTranslation } from 'react-i18next';
-
-function toggleTheme(): void {
-    const $target = document.querySelector('body');
-    $target?.classList.toggle('dark');
-}
-
-if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    toggleTheme()
-}
+import useDarkTheme from '../hooks/useDarkTheme';
 
 function Navbar() {
 
     const { t, i18n } = useTranslation();
+    const { isDark, toggleDarkTheme } = useDarkTheme();
 
     function toggleMenu(): void {
         const $target = document.getElementById('navbarToggle');
@@ -52,8 +45,8 @@ function Navbar() {
                     <a href="#social" className="navbar-item">
                         {t('navbar.part4')}
                     </a>
-                    <a className="navbar-item" onClick={toggleTheme}>
-                        <Icon path={mdiThemeLightDark} size={1} />
+                    <a className="navbar-item" onClick={toggleDarkTheme}>
+                        <Icon path={isDark ? mdiBrightness4 : mdiBrightness5} size={1} />
                     </a>
                 <div className='navbar-item has-dropdown is-hoverable'>
                     <a className="navbar-link is-arrowless">

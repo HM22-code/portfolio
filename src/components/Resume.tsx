@@ -6,7 +6,9 @@ function Resume() {
     const { t } = useTranslation();
 
     return (
-        <section id="resume" className="section box"
+        <section
+            id="resume"
+            className="section box"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -19,6 +21,9 @@ function Resume() {
             <div className="columns">
 
                 <div className="column">
+                    {
+                        // TODO: Add tabs for Education/Work Experience
+                    }
                     <ResumeTimeline items={
                         [
                             {
@@ -51,7 +56,7 @@ function Resume() {
 
                 <div className="column">
                     {
-                        /* TODO: place for additional content */
+                        // TODO: Place for additional content
                     }
                 </div>
             </div>

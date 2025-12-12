@@ -5,12 +5,14 @@ import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import "./index.scss";
+import './locales/i18n';
 
 function App() {
-
+    // Initialize AOS library
     useEffect(() => {
         AOS.init();
     }, [])
@@ -20,11 +22,13 @@ function App() {
         {
             <>
                 <Navbar />
-                <Banner />
-                <Social />
-                <About />
-                <Resume />
-                <Projects />
+                <>
+                    <Banner />
+                    <Social />
+                    <About />
+                    <Resume />
+                    <Projects />
+                </>
                 <Footer />
             </>
         }

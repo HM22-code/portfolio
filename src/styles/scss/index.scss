@@ -7,6 +7,11 @@ $vite-color: #646cffaa;
 $react-color: #61dafbaa;
 $bulma-color: #59d2d6aa;
 
+// Project cards
+$card-border-radius: 12px;
+$column-gap: 0.75rem;
+$card-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+
 /* Override Bulma css */
 
 @import '../node_modules/bulma/bulma.sass';
@@ -210,6 +215,10 @@ body.dark div.column{
 }
 body.dark .box{
     background: $dark;
+}
+body.dark article.card{
+    background: $dark;
+    color: $light;
 }
 body.dark .navbar-item {
     background-color: $dark-light;

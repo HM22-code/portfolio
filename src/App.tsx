@@ -1,14 +1,10 @@
 import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
-import Social from "./components/Social";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import "./index.scss";
+import "./styles/scss/index.scss";
 import './locales/i18n';
 
 function App() {
@@ -22,13 +18,9 @@ function App() {
         {
             <>
                 <Navbar />
-                <>
-                    <Banner />
-                    <Social />
-                    <About />
-                    <Resume />
-                    <Projects />
-                </>
+                <main>
+                    <HomePage />
+                </main>
                 <Footer />
             </>
         }

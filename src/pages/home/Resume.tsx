@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import ResumeTimeline from './ResumeTimeline';
+import ResumeTimeline from '../../components/ResumeTimeline';
 
 function Resume() {
 
@@ -8,7 +8,7 @@ function Resume() {
     return (
         <section
             id="resume"
-            className="section box"
+            className="section"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"

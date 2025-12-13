@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import project1 from "/assets/img/project-1.png";
 import project2 from "/assets/img/project-2.png";
 import project3 from "/assets/img/project-3.png";
@@ -9,7 +9,9 @@ function Projects() {
     const { t } = useTranslation();
 
     return (
-        <section id="projects" className="section"
+        <section
+            id="projects"
+            className="section"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"

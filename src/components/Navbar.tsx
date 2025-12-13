@@ -2,6 +2,7 @@ import Icon from '@mdi/react';
 import { mdiBrightness4, mdiBrightness5, mdiTranslate } from '@mdi/js';
 import { useTranslation } from 'react-i18next';
 import useDarkTheme from '../hooks/useDarkTheme';
+import profileLogo from "/assets/img/profile-logo.png";
 
 function Navbar() {
 
@@ -23,7 +24,10 @@ function Navbar() {
         >
             <div className="navbar-brand">
                 <a href="https://github.com/HM22-code" className="navbar-item">
-                    <header>
+                    <header className='is-flex is-align-items-center is-justify-content-center'>
+                        <figure className="profile-logo image is-24x24 mr-2">
+                            <img src={profileLogo} alt="Profile logo"/>
+                        </figure>
                         <p className="profile-name">HM22-code</p>
                     </header>
                 </a>

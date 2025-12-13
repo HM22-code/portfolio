@@ -1,4 +1,5 @@
 $dark-light:#4d4d4d;
+$dark-light-separator: #4a4a4a;
 $primary: #00ff8f;
 $secondary: #00a1ff;
 $link: $primary;
@@ -108,13 +109,15 @@ a:hover {
     }
 }
 
-.columns.is-vcentered.box {
+#hero-banner {
     --border-width: 2px;
     border: var(--border-width) solid transparent;
+    border-radius: 0px;
     box-sizing: border-box;
     border-image: conic-gradient(from var(--angle), $primary 80%, #E0D1FF 88%, #d1f8ff 92%, $secondary 100%) 0.5;
     animation: spin 3s linear infinite paused;
     animation-play-state: running;
+    background: radial-gradient(circle, rgba(0,161,255,0.4) 0%, rgba(0,255,143,0.4) 100%);
 }
 
 @property --angle {
@@ -145,12 +148,38 @@ img:hover {
 	}
 }
 
-#social {
-    background: rgb(0,161,255);
-    background: radial-gradient(circle, rgba(0,161,255,0.4) 0%, rgba(0,255,143,0.4) 100%);
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
 }
 
-#banner {
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+#social {
+    background: radial-gradient(circle, rgba(0,255,143,0.4) 0%, rgba(0,161,255,0.7) 100%);
+}
+
+#social a {
+    transition: filter 300ms;
+    filter: drop-shadow(0 0 1em $secondary);
+}
+
+#social a:hover {
+    filter: drop-shadow(0 0 2em $primary);
+    transition: filter 300ms;
+}
+
+#hero {
     background: linear-gradient(270deg, $primary, $secondary);
     background-size: 400% 400%;
     -webkit-animation: GradientAnimation 30s ease infinite;
@@ -209,10 +238,6 @@ body.dark div.tile{
     background: $dark;
     color: $light;
 }
-body.dark div.column{
-    background: $dark;
-    color: $light;
-}
 body.dark .box{
     background: $dark;
 }
@@ -238,20 +263,6 @@ body.dark .navbar-dropdown {
     background-color: $dark-light;
     color: $light;
 }
-
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-10px);
-    }
+body.dark hr {
+    background-color: $dark-light-separator;
 }

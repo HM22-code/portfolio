@@ -15,7 +15,7 @@
         },
         "about": {
             "title": "About me",
-            "description": "My name's Hugo. I'm a full-stack developer. Currently, I have just been graduated for a Bachelor's degree in Application Design and Development in Dijon, with a view to training in this field of IT. I'm interested in 💻 new technologies and 👨‍💻 computer science in general. I'm passionate about 🎮 video games and their 🎨 creative fields. I'm curious by nature and I want to progress in IT. I'm always looking to improve in what I do or produce in general, as well as being able to work independently."
+            "description": "I am a full-stack developer. I code websites, applications, software, and games. I am passionate about video games and their creative aspects, which inspire me in my own creations. I enjoy drawing. I am interested in new technologies and computer science in general. I am curious by nature and enjoy experimenting."
         },
         "resume": {
             "title": "Resume",
@@ -41,15 +41,12 @@
             "project1": "RPG-idea",
             "subtitle1": "Angular.Angular Material",
             "description1": "A RPG videogame project manager UI made with Angular.",
-            "button1": "Source Code",
             "project2": "Accro'Fun",
             "subtitle2": "React.Tailwind",
             "description2": "A sample project made with React and Tailwind.",
-            "button2": "Source Code",
             "project3": "Ex-raceone",
             "subtitle3": "Pygame",
-            "description3": "A web and desktop space shooter game made with Pygame.",
-            "button3": "Source Code"
+            "description3": "A web and desktop space shooter game made with Pygame."
         },
         "footer": {
             "title": "Made with 💙 by HM22-code"

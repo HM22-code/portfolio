@@ -15,7 +15,7 @@
         },
         "about": {
             "title": "À propos",
-            "description": "Je m'appelle Hugo. Je suis développeur full-stack. Actuellement, je viens de terminer une licence conception et développement d'applications à Dijon, dans le but de me former dans ce domaine de l'informatique. Je suis intéressé par 💻 les nouvelles technologies et 👨‍💻 l'informatique en général. Je suis passionné par 🎮 les jeux vidéo et leurs 🎨 domaines créatifs. Je suis curieux de nature et j'ai envie de progresser dans l'informatique. Je cherche toujours à m'améliorer dans ce que je fais ou produis en général, tout en étant capable de travailler de manière autonome."
+            "description": "Je suis développeur Full-Stack. Je code des site web, des applications, des logicels ou bien des jeux. Je suis passionné par les jeux vidéo et leurs domaines créatifs qui m'inspire dans mes créations. J'aime dessiner. Je m'intéresse aux nouvelles technologies et à l'informatique en général. Je suis curieux de nature et j'aime expérimenter."
         },
         "resume": {
             "title": "Curriculum Vitae",
@@ -41,15 +41,12 @@
             "project1": "RPG-idea",
             "subtitle1": "Angular.Angular Material",
             "description1": "Une interface de gestion de projet de jeu vidéo RPG réalisée avec Angular.",
-            "button1": "Code Source",
             "project2": "Accro'Fun",
             "subtitle2": "React.Tailwind",
             "description2": "Un exemple de projet réalisé avec React et Tailwind.",
-            "button2": "Code Source",
             "project3": "Ex-raceone",
             "subtitle3": "Pygame",
-            "description3": "Un jeu de type space shooter web et de bureau réalisé avec Pygame.",
-            "button3": "Code Source"
+            "description3": "Un jeu de type space shooter web et de bureau réalisé avec Pygame."
         },
         "footer": {
             "title": "Fait avec 💙 par HM22-code"

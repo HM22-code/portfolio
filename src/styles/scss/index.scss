@@ -170,8 +170,7 @@ img:hover {
 }
 
 #social a {
-    transition: filter 300ms;
-    filter: drop-shadow(0 0 1em $secondary);
+    filter: drop-shadow(0 0 0.2em $secondary);
 }
 
 #social a:hover {
@@ -185,6 +184,19 @@ img:hover {
     -webkit-animation: GradientAnimation 30s ease infinite;
     -moz-animation: GradientAnimation 30s ease infinite;
     animation: GradientAnimation 30s ease infinite;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px),
+            repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px);
+        pointer-events: none;
+    }
 }
 
 @-webkit-keyframes GradientAnimation {

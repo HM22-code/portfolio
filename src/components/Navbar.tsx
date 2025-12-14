@@ -31,9 +31,6 @@ function Navbar() {
                         <p className="profile-name">HM22-code</p>
                     </header>
                 </a>
-                <a className="navbar-item" onClick={toggleDarkTheme}>
-                    <Icon path={isDark ? mdiBrightness4 : mdiBrightness5} size={1} />
-                </a>
                 <a onClick={toggleMenu} role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarToggle">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -71,6 +68,12 @@ function Navbar() {
                             </a>
                         </div>
                     </div>
+                    <a className="navbar-item" onClick={toggleDarkTheme}>
+                        <div className='is-flex is-align-items-center'>
+                            <Icon path={isDark ? mdiBrightness4 : mdiBrightness5} size={1}  className='mr-2' />
+                            {isDark ? <p>{t('navbar.part8')}</p> : <p>{t('navbar.part9')}</p>}
+                        </div>
+                    </a>
                 </div>
             </div>
         </nav>

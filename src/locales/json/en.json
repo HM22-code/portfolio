@@ -7,7 +7,9 @@
             "part4": "Social",
             "part5": "Language",
             "part6": "English",
-            "part7": "French"
+            "part7": "French",
+            "part8": "Dark Mode",
+            "part9": "Light Mode"
         },
         "banner": {
             "title": "Hi, I’m Hugo",

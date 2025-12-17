@@ -1,28 +1,4 @@
-$vite-color: #646cffaa;
-$react-color: #61dafbaa;
-$bulma-color: #59d2d6aa;
-
-$dark-light:#4d4d4d;
-$dark-light-separator: #4a4a4a;
-
-// Bulma overrides
-$primary: #00ff8f;
-$secondary: #00a1ff;
-$link: $primary;
-$info: $secondary;
-$family-primary: 'ztnature-medium', sans-serif;
-$family-secondary: 'ztnature-thin', sans-serif;
-
-// Project cards
-$card-border-radius: 12px;
-$column-gap: 0.75rem;
-$card-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
-
-/* Override Bulma css */
-
-@import '../node_modules/bulma/bulma.sass';
-@import '../node_modules/bulma-timeline/src/sass/index.sass';
-
+// fonts
 @font-face {
     font-family: 'ztnature-medium';
     src: url('/assets/fonts/ZTNature-Medium.ttf');
@@ -33,6 +9,10 @@ $card-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
     src: url('/assets/fonts/ZTNature-Thin.ttf');
 }
 
+@import 'variables';
+@import 'bulma-overrides';
+@import '../node_modules/bulma/bulma.sass';
+@import '../node_modules/bulma-timeline/src/sass/index.sass';
 
 a {
     color: $primary;
@@ -130,10 +110,10 @@ a:hover {
     border: var(--border-width) solid transparent;
     border-radius: 0px;
     box-sizing: border-box;
-    border-image: conic-gradient(from var(--angle), $primary 80%, #E0D1FF 88%, #d1f8ff 92%, $secondary 100%) 0.5;
+    border-image: conic-gradient(from var(--angle), $primary 80%, opacify(lighten($primary, 80%), 0.4) 88%, opacify(lighten($secondary, 80%), 0.4) 92%, $primary 100%) 0.5;
     animation: spin 3s linear infinite paused;
     animation-play-state: running;
-    background: radial-gradient(circle, rgba(0,161,255,0.4) 0%, rgba(0,255,143,0.4) 100%);
+    background: radial-gradient(circle, opacify(darken($secondary, 1%), 0.4) 0%, opacify(darken($primary, 1%), 0.4) 100%);
 }
 
 @property --angle {
@@ -182,7 +162,7 @@ img:hover {
 }
 
 #social {
-    background: radial-gradient(circle, rgba(0,255,143,0.4) 0%, rgba(0,161,255,0.7) 100%);
+    background: radial-gradient(circle, opacify(darken($secondary, 10%), 0.4) 0%, opacify(darken($primary, 10%), 0.7) 100%);
 }
 
 #social a {
@@ -209,7 +189,7 @@ img:hover {
         right: 0;
         bottom: 0;
         background-image:
-            repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px),
+            //repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px),
             repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px);
         pointer-events: none;
     }

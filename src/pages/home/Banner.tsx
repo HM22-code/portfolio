@@ -29,7 +29,7 @@ function Banner() {
                             <h2 className="title is-4 is-size-6-mobile is-size-3-tablet">
                                 {t('banner.title')}
                             </h2>
-                            <p className="subtitle is-size-6-mobile is-size-4-tablet has-text-white">
+                            <p className="subtitle is-size-6-mobile is-size-4-tablet has-text-white is-family-secondary">
                                 {t('banner.subtitle')}
                             </p>
                         </div>

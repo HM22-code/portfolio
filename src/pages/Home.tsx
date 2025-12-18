@@ -4,16 +4,16 @@ import Resume from "./home/Resume";
 import Projects from "./home/Projects";
 import Social from "./home/Social";
 
-function HomePage() {
+function Home() {
 	return (
 		<>
-            <Banner />
-            <Social />
-            <About />
-            <Resume />
-            <Projects />
+                  <Banner />
+                  <Social />
+                  <About />
+                  <Resume />
+                  <Projects />
 		</>
 	);
 }
 
-export default HomePage;
+export default Home;

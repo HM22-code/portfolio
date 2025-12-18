@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
+import Navbar from "./components/shared/Navbar";
+import Footer from "./components/shared/Footer";
+import Home from "./pages/Home";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,7 +19,7 @@ function App() {
             <>
                 <Navbar />
                 <main>
-                    <HomePage />
+                    <Home />
                 </main>
                 <Footer />
             </>

@@ -1,7 +1,7 @@
 import Icon from '@mdi/react';
 import { mdiBrightness4, mdiBrightness5, mdiTranslate } from '@mdi/js';
 import { useTranslation } from 'react-i18next';
-import useDarkTheme from '../hooks/useDarkTheme';
+import useDarkTheme from '../../hooks/useDarkTheme';
 import profileLogo from "/assets/img/profile-logo.png";
 
 function Navbar() {

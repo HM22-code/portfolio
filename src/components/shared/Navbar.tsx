@@ -56,14 +56,14 @@ function Navbar() {
                         <a className="navbar-link is-arrowless">
                             <div className='is-flex is-align-items-center'>
                                 <Icon path={mdiTranslate} size={1} className='mr-2' />
-                                <p>{t('navbar.part5')}</p>
+                                <p className='is-unselectable'>{t('navbar.part5')}</p>
                             </div>
                         </a>
                         <div className="navbar-dropdown">
-                            <a className="navbar-item" id="language-en" onClick={() => {i18n.changeLanguage("en")}}>
+                            <a className="navbar-item is-unselectable" id="language-en" onClick={() => {i18n.changeLanguage("en")}}>
                                 {t('navbar.part6')}
                             </a>
-                            <a className="navbar-item" id="language-fr" onClick={() => {i18n.changeLanguage("fr")}}>
+                            <a className="navbar-item is-unselectable" id="language-fr" onClick={() => {i18n.changeLanguage("fr")}}>
                                 {t('navbar.part7')}
                             </a>
                         </div>
@@ -71,7 +71,7 @@ function Navbar() {
                     <a className="navbar-item" onClick={toggleDarkTheme}>
                         <div className='is-flex is-align-items-center'>
                             <Icon path={isDark ? mdiBrightness4 : mdiBrightness5} size={1}  className='mr-2' />
-                            {isDark ? <p>{t('navbar.part8')}</p> : <p>{t('navbar.part9')}</p>}
+                            {isDark ? <p className='is-unselectable'>{t('navbar.part8')}</p> : <p className='is-unselectable'>{t('navbar.part9')}</p>}
                         </div>
                     </a>
                 </div>

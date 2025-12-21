@@ -1,12 +1,35 @@
 import ProjectCard from "../../components/ProjectCard";
+import { ProjectItem } from "../../interfaces/ProjectItem";
 import project1 from "/assets/img/project-1.png";
 import project2 from "/assets/img/project-2.png";
 import project3 from "/assets/img/project-3.png";
 import { useTranslation } from 'react-i18next';
 
 function Projects() {
-
     const { t } = useTranslation();
+    const projects: ProjectItem[] = [
+        {
+            preview: project1,
+            link: "https://github.com/HM22-code/RPG-idea",
+            title: t('projects.project1'),
+            subtitle: t('projects.subtitle1'),
+            description: t('projects.description1')
+        },
+        {
+            preview: project2,
+            link: "https://hm22-code.github.io/static-web-page-showcase/",
+            title: t('projects.project2'),
+            subtitle: t('projects.subtitle2'),
+            description: t('projects.description2')
+        },
+        {
+            preview: project3,
+            link: "https://jude-erdrick.itch.io/ex-raceone",
+            title: t('projects.project3'),
+            subtitle: t('projects.subtitle3'),
+            description: t('projects.description3')
+        }
+    ];
 
     return (
         <section
@@ -23,27 +46,11 @@ function Projects() {
             </h2>
             <br/>
             <div className="columns is-multiline is-half-tablet">
-                <ProjectCard
-                    preview={project1}
-                    link="https://github.com/HM22-code/RPG-idea"
-                    title={t('projects.project1')}
-                    subtitle={t('projects.subtitle1')}
-                    description={t('projects.description1')}
-                />
-                <ProjectCard
-                    preview={project2}
-                    link="https://hm22-code.github.io/static-web-page-showcase/"
-                    title={t('projects.project2')}
-                    subtitle={t('projects.subtitle2')}
-                    description={t('projects.description2')}
-                />
-                <ProjectCard
-                    preview={project3}
-                    link="https://jude-erdrick.itch.io/ex-raceone"
-                    title={t('projects.project3')}
-                    subtitle={t('projects.subtitle3')}
-                    description={t('projects.description3')}
-                />
+                {
+                    projects.map((item, index) =>
+                        <ProjectCard key={index} item={item}/>
+                    )
+                }
             </div>
         </section>
     )

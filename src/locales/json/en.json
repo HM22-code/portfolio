@@ -15,12 +15,22 @@
             "title": "Hi, I’m Hugo",
             "subtitle": "Welcome to my portfolio !"
         },
+        "social": {
+            "item1": "LinkedIn",
+            "item2": "Github",
+            "item3": "Mail",
+            "item4": "Itch.io"
+        },
         "about": {
             "title": "About me",
             "description": "I am a full-stack developer. I code websites, applications, software, and games. I am passionate about video games and their creative aspects, which inspire me in my own creations. I enjoy drawing. I am interested in new technologies and computer science in general. I am curious by nature and enjoy experimenting."
         },
         "resume": {
             "title": "Resume",
+            "tag1": "All",
+            "tag2": "Work",
+            "tag3": "Education",
+            "tag4": "Personal",
             "period1": "September 2020 - June 2022",
             "work1": "IT Computing University Degree - IUT Dijon",
             "location1": "Dijon, Bourgogne-Franche-Comté, France",

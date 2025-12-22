@@ -15,12 +15,22 @@
             "title": "Bonjour, Je m'appelle Hugo",
             "subtitle": "Bienvenue sur mon portfolio !"
         },
+        "social": {
+            "item1": "LinkedIn",
+            "item2": "Github",
+            "item3": "Mail",
+            "item4": "Itch.io"
+        },
         "about": {
             "title": "À propos",
             "description": "Je suis développeur Full-Stack. Je code des site web, des applications, des logicels ou bien des jeux. Je suis passionné par les jeux vidéo et leurs domaines créatifs qui m'inspire dans mes créations. J'aime dessiner. Je m'intéresse aux nouvelles technologies et à l'informatique en général. Je suis curieux de nature et j'aime expérimenter."
         },
         "resume": {
             "title": "Curriculum Vitae",
+            "tag1": "Tout",
+            "tag2": "Profesionnel",
+            "tag3": "Formation",
+            "tag4": "Personnel",
             "period1": "Septembre 2020 - Juin 2022",
             "work1": "DUT informatique - IUT Dijon",
             "location1": "Dijon, Bourgogne-Franche-Comté, France",

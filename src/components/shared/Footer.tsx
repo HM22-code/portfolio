@@ -10,7 +10,7 @@ function Footer() {
     return (
         <footer className="footer is-flex is-flex-direction-column py-4">
             <div className="level is-mobile">
-                <p className="level-item">{t('footer.title')}</p>
+                <p className="level-item is-family-code">{t('footer.title')}</p>
             </div>
             <br/>
             <div className="level is-mobile">

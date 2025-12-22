@@ -4,61 +4,71 @@
 body.dark {
     background-color: $dark;
     color: $light;
-}
-body.dark .subtitle {
+
+    button {
+        background: $light;
+        color: $dark;
+    }
+    section {
+        background: $dark;
+        color: $light;
+    }
+    footer.div,footer,nav {
+        background: $dark-light;
+    }
+    div.navbar-menu{
+        background: $dark-light;
+    }
+    nav a {
     color: $light;
-}
-body.dark .title {
-    color: $primary;
-}
-body.dark button {
-    background: $light;
-    color: $dark;
-}
-body.dark section {
-    background: $dark;
-    color: $light;
-}
-body.dark footer.div,
-body.dark footer,
-body.dark nav {
-    background: $dark-light;
-}
-body.dark div.navbar-menu{
-    background: $dark-light;
-}
-body.dark nav a {
-    color: $light;
-}
-body.dark div.tile{
-    background: $dark;
-    color: $light;
-}
-body.dark .box{
-    background: $dark;
-}
-body.dark article.card{
-    background: $dark;
-    color: $light;
-}
-body.dark .navbar-item {
-    background-color: $dark-light;
-    color: $light;
-}
-body.dark .navbar-item:hover {
-    color: $primary;
-}
-body.dark .navbar-link {
-    background-color: $dark-light;
-    color: $light;
-}
-body.dark .navbar-link:hover {
-    color: $primary;
-}
-body.dark .navbar-dropdown {
-    background-color: $dark-light;
-    color: $light;
-}
-body.dark hr {
-    background-color: $dark-light-separator;
+    }
+    li a {
+        color: $light;
+    }
+    li a:hover {
+        color: $light;
+        border-bottom: 1px solid $dark-light;
+    }
+    li.is-active a:hover {
+        color: $primary;
+        border-bottom: 1px solid $primary;
+    }
+    div.tile{
+        background: $dark;
+        color: $light;
+    }
+    hr {
+        background-color: $dark-light-separator;
+    }
+    article.card{
+        background: $dark;
+        color: $light;
+    }
+    .subtitle {
+        color: $light;
+    }
+    .title {
+        color: $primary;
+    }
+    .box{
+        background: $dark;
+    }
+    .navbar-item {
+        background-color: $dark-light;
+        color: $light;
+    }
+    .navbar-item:hover {
+        color: $primary;
+    }
+    .navbar-link {
+        background-color: $dark-light;
+        color: $light;
+    }
+    .navbar-link:hover {
+        color: $primary;
+    }
+    .navbar-dropdown {
+        background-color: $dark-light;
+        color: $light;
+    }
 }

@@ -5,6 +5,7 @@ import project2 from "/assets/img/project-2.png";
 import project3 from "/assets/img/project-3.png";
 import { useTranslation } from 'react-i18next';
 
+// Projects section
 function Projects() {
     const { t } = useTranslation();
     const projects: ProjectItem[] = [

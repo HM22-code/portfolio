@@ -3,8 +3,8 @@ import viteLogo from "/assets/svg/vite.svg";
 import bulmaLogo from "/assets/svg/bulma.svg";
 import { useTranslation } from 'react-i18next';
 
+// Footer component
 function Footer() {
-
     const { t } = useTranslation();
 
     return (

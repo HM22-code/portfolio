@@ -4,15 +4,16 @@ import Resume from "./home/Resume";
 import Projects from "./home/Projects";
 import Social from "./home/Social";
 
+// Home page
 function Home() {
 	return (
-		<>
-                  <Banner />
-                  <Social />
-                  <About />
-                  <Resume />
-                  <Projects />
-		</>
+		<div>
+            <Banner />
+            <Social />
+            <About />
+            <Resume />
+            <Projects />
+		</div>
 	);
 }
 

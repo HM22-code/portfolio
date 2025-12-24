@@ -4,11 +4,12 @@ import { useTranslation } from 'react-i18next';
 import useDarkTheme from '../../hooks/useDarkTheme';
 import profileLogo from "/assets/img/profile-logo.png";
 
+// Navbar component
 function Navbar() {
-
     const { t, i18n } = useTranslation();
     const { isDark, toggleDarkTheme } = useDarkTheme();
 
+    // Toggle nav menu for mobile devices
     function toggleMenu(): void {
         const $target = document.getElementById('navbarToggle');
         $target?.classList.toggle('is-active');

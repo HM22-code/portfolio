@@ -6,6 +6,7 @@ import Icon from '@mdi/react';
 import { mdiBagPersonalOutline, mdiBriefcaseVariantOutline, mdiSchoolOutline, mdiTagTextOutline } from '@mdi/js';
 import { useState } from 'react';
 
+// Resume section
 function Resume() {
     const { t } = useTranslation();
     const timelineItems: TimelineItem[] = [
@@ -41,6 +42,7 @@ function Resume() {
     const [filteredItems, setFilteredItems] = useState<TimelineItem[]>(timelineItems);
     const [activeTab, setActiveTabs] = useState<string>("All");
 
+    // Toggle active tab
     function toggleTabs(name: string): void {
         let $target = document.getElementById(activeTab);
         $target?.classList.toggle('is-active');
@@ -67,48 +69,48 @@ function Resume() {
                     <div className="tabs is-left">
                         <ul>
                             <li id='All' className="is-active">
-                            <a onClick={() => {
-                                setFilteredItems(timelineItems);
-                                toggleTabs('All');
-                            }}>
-                                <span className="icon is-small">
-                                    <Icon path={mdiTagTextOutline} size={1} />
-                                </span>
-                                <span>{t('resume.tag1')}</span>
-                            </a>
+                                <a onClick={() => {
+                                    setFilteredItems(timelineItems);
+                                    toggleTabs('All');
+                                }}>
+                                    <span className="icon is-small">
+                                        <Icon path={mdiTagTextOutline} size={1} />
+                                    </span>
+                                    <span>{t('resume.tag1')}</span>
+                                </a>
                             </li>
                             <li id='Work'>
-                            <a onClick={() => {
-                                setFilteredItems(timelineItems.filter((item) => item.type == ExperienceTypes.WORK));
-                                toggleTabs('Work');
-                            }}>
-                                <span className="icon is-small">
-                                    <Icon path={mdiBriefcaseVariantOutline} size={1} />
-                                </span>
-                                <span>{t('resume.tag2')}</span>
-                            </a>
+                                <a onClick={() => {
+                                    setFilteredItems(timelineItems.filter((item) => item.type == ExperienceTypes.WORK));
+                                    toggleTabs('Work');
+                                }}>
+                                    <span className="icon is-small">
+                                        <Icon path={mdiBriefcaseVariantOutline} size={1} />
+                                    </span>
+                                    <span>{t('resume.tag2')}</span>
+                                </a>
                             </li>
                             <li id='Education'>
-                            <a onClick={() => {
-                                setFilteredItems(timelineItems.filter((item) => item.type == ExperienceTypes.EDUCATION));
-                                toggleTabs('Education');
-                            }}>
-                                <span className="icon is-small">
-                                    <Icon path={mdiSchoolOutline} size={1} />
-                                </span>
-                                <span>{t('resume.tag3')}</span>
-                            </a>
+                                <a onClick={() => {
+                                    setFilteredItems(timelineItems.filter((item) => item.type == ExperienceTypes.EDUCATION));
+                                    toggleTabs('Education');
+                                }}>
+                                    <span className="icon is-small">
+                                        <Icon path={mdiSchoolOutline} size={1} />
+                                    </span>
+                                    <span>{t('resume.tag3')}</span>
+                                </a>
                             </li>
                             <li id='Personal'>
-                            <a onClick={() => {
-                                setFilteredItems(timelineItems.filter((item) => item.type == ExperienceTypes.PERSONAL));
-                                toggleTabs('Personal');
-                            }}>
-                                <span className="icon is-small">
-                                    <Icon path={mdiBagPersonalOutline} size={1} />
-                                </span>
-                                <span>{t('resume.tag4')}</span>
-                            </a>
+                                <a onClick={() => {
+                                    setFilteredItems(timelineItems.filter((item) => item.type == ExperienceTypes.PERSONAL));
+                                    toggleTabs('Personal');
+                                }}>
+                                    <span className="icon is-small">
+                                        <Icon path={mdiBagPersonalOutline} size={1} />
+                                    </span>
+                                    <span>{t('resume.tag4')}</span>
+                                </a>
                             </li>
                         </ul>
                     </div>

@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import "./styles/scss/index.scss";
 import './locales/i18n';
 
+// App root
 function App() {
     // Initialize AOS library
     useEffect(() => {
@@ -16,13 +17,13 @@ function App() {
 	return (
 		<>
         {
-            <>
+            <div>
                 <Navbar />
                 <main>
                     <Home />
                 </main>
                 <Footer />
-            </>
+            </div>
         }
 		</>
 	);

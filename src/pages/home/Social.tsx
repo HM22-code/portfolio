@@ -3,6 +3,7 @@ import { mdiLinkedin, mdiGithub, mdiGmail, mdiController } from '@mdi/js';
 import { SocialItem } from '../../interfaces/SocialItem';
 import { useTranslation } from 'react-i18next';
 
+// Social section
 function Social() {
     const { t } = useTranslation();
     const socials: SocialItem[] = [

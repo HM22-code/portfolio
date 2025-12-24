@@ -7,6 +7,7 @@ type ResumeTimelineProps = {
     items: TimelineItem[];
 }
 
+// Resume timeline component
 function ResumeTimeline(props: ResumeTimelineProps) {
     return (
         <div className="timeline">
@@ -55,4 +56,5 @@ function ResumeTimeline(props: ResumeTimelineProps) {
         </div>
     )
 }
+
 export default ResumeTimeline;

@@ -4,6 +4,7 @@ type ProjectCardProps = {
     item: ProjectItem
 }
 
+// Project card component
 function ProjectCard(props : ProjectCardProps) {
     return (
         <article className="card column is-one-third"

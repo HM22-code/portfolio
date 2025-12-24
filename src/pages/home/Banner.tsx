@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { mdiArrowDown } from '@mdi/js';
 import Icon from "@mdi/react";
 
+// Banner section
 function Banner() {
-
     const { t } = useTranslation();
 
     return (

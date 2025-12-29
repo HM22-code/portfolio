@@ -43,8 +43,8 @@ function ResumeTimeline(props: ResumeTimelineProps) {
                             <div className="level-left is-mobile is-flex-direction-row is-flex-wrap-wrap is-flex pt-2">
                                 {
                                     item.keywords.split(".").map((item, key) =>
-                                        <div className="level-item mr-1 mb-1">
-                                            <span key={key} className="tag is-primary">{item}</span>
+                                        <div className="level-item mr-1 mb-1" key={key}>
+                                            <span className="tag is-primary">{item}</span>
                                         </div>
                                     )
                                 }

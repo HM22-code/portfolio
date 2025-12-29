@@ -27,8 +27,8 @@ function ProjectCard(props : ProjectCardProps) {
                             <div className="level-left is-mobile">
                                 {
                                     props.item.subtitle.split(".").map((item, key) =>
-                                        <div className="level-item">
-                                            <span key={key} className="tag is-primary">{item}</span>
+                                        <div className="level-item" key={key}>
+                                            <span className="tag is-primary">{item}</span>
                                         </div>
                                     )
                                 }

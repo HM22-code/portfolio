@@ -53,6 +53,9 @@ body.dark {
     .box{
         background: $dark;
     }
+    .navbar-brand {
+        border-bottom: 1px solid $dark-light-separator;
+    }
     .navbar-item {
         background-color: $dark-light;
         color: $light;

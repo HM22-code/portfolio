@@ -1,7 +1,7 @@
 import Icon from "@mdi/react";
 import { ExperienceTypes } from "../enum/ExperienceTypes";
 import { TimelineItem } from "../interfaces/TimelineItem";
-import { mdiBagPersonalOutline, mdiBriefcaseVariantOutline, mdiHandHeartOutline, mdiSchoolOutline } from "@mdi/js";
+import { mdiBagPersonalOutline, mdiBriefcaseVariantOutline, mdiSchoolOutline } from "@mdi/js";
 
 type ResumeTimelineProps = {
     items: TimelineItem[];
@@ -13,23 +13,23 @@ function ResumeTimeline(props: ResumeTimelineProps) {
         <div className="timeline">
             {
                 props.items.map((item: TimelineItem, key) =>
-                    <div key={key} className="timeline-item">
+                    <div key={key} className="timeline-item"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <div className="timeline-marker"></div>
                         <div className="timeline-content">
                             <div className="timeline-tag is-icon">
                                 <figure className="image is-32x32">
                                     {
-                                        item.type === ExperienceTypes.WORK ? (
+                                        item.type === ExperienceTypes.EXPERIENCE ? (
                                             <Icon path={mdiBriefcaseVariantOutline} size={1} />
                                         ) :
                                         item.type === ExperienceTypes.EDUCATION ? (
                                             <Icon path={mdiSchoolOutline} size={1} />
-                                        ) :
-                                        item.type === ExperienceTypes.PERSONAL ? (
-                                            <Icon path={mdiBagPersonalOutline} size={1} />
-                                        ) :
-                                        item.type === ExperienceTypes.VOLUNTEER ? (
-                                            <Icon path={mdiHandHeartOutline} size={1} />
                                         ) :
                                         (
                                             <Icon path={mdiBagPersonalOutline} size={1} />

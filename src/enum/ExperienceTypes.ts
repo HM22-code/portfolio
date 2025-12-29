@@ -1,6 +1,4 @@
 export enum ExperienceTypes {
-    WORK = "work",
+    EXPERIENCE = "experience",
     EDUCATION = "education",
-    VOLUNTEER = "volunteer",
-    PERSONAL = "personal"
 }

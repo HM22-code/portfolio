@@ -25,7 +25,7 @@ a:hover {
     justify-content: center;
 }
 
-.navbar-brand {
+.navbar {
     border-bottom: 1px solid $light;
 }
 
@@ -33,8 +33,8 @@ a:hover {
     color: $primary;
     font-weight: bold;
 }
-.profile-name:hover {
-    filter: drop-shadow(0 0 2em $primary);
+.profile-link:hover {
+    filter: drop-shadow(0 0 0.05em $primary);
     transition: filter 300ms;
 }
 

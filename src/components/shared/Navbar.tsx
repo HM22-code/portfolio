@@ -9,10 +9,22 @@ function Navbar() {
     const { t, i18n } = useTranslation();
     const { isDark, toggleDarkTheme } = useDarkTheme();
 
-    // Toggle nav menu for mobile devices
+    // Toggle nav menu for mobile devices when clicking on burger icon
     function toggleMenu(): void {
         const $target = document.getElementById('navbarToggle');
         $target?.classList.toggle('is-active');
+    }
+
+    // Toggle nav menu for mobile devices if active
+    function toggleMenuIfActive(): void {
+        const $target = document.getElementById('navbarToggle');
+        $target?.classList.contains('is-active') && $target.classList.toggle('is-active');
+    }
+
+    // Scroll to a specific section when clicking on a nav link
+    function scrollToIndex(id: string): void {
+        document.querySelector('#' + id)?.scrollIntoView({ behavior: 'smooth' })
+        toggleMenuIfActive();
     }
 
     return (
@@ -24,12 +36,12 @@ function Navbar() {
             data-aos-anchor-placement="top-bottom"
         >
             <div className="navbar-brand">
-                <a href="https://github.com/HM22-code" className="navbar-item">
+                <a href="https://github.com/HM22-code" className="profile-link navbar-item">
                     <header className='is-flex is-align-items-center is-justify-content-center'>
                         <figure className="profile-logo image is-24x24 mr-2">
                             <img src={profileLogo} alt="Profile logo"/>
                         </figure>
-                        <p className="profile-name">HM22-code</p>
+                        <p className="profile-name is-unselectable">HM22-code</p>
                     </header>
                 </a>
                 <a onClick={toggleMenu} role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarToggle">
@@ -40,16 +52,16 @@ function Navbar() {
             </div>
             <div id="navbarToggle" className="navbar-menu">
                 <div className="navbar-start">
-                    <a href="#about" className="navbar-item">
+                    <a className="navbar-item" onClick={() => scrollToIndex('about')}>
                         {t('navbar.part1')}
                     </a>
-                    <a href="#resume" className="navbar-item">
+                    <a className="navbar-item" onClick={() => scrollToIndex('resume')}>
                         {t('navbar.part2')}
                     </a>
-                    <a href="#projects" className="navbar-item">
+                    <a className="navbar-item" onClick={() => scrollToIndex('projects')}>
                         {t('navbar.part3')}
                     </a>
-                    <a href="#social" className="navbar-item">
+                    <a className="navbar-item" onClick={() => scrollToIndex('social')}>
                         {t('navbar.part4')}
                     </a>
                     <hr/>

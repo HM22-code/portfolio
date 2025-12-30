@@ -13,11 +13,14 @@ body.dark {
         background: $dark;
         color: $light;
     }
-    footer.div,footer,nav {
+    footer.div,footer {
         background: $dark-light;
     }
     div.navbar-menu{
-        background: $dark-light;
+        background: $dark;
+    }
+    nav {
+        background: $dark;
     }
     nav a {
     color: $light;
@@ -44,6 +47,7 @@ body.dark {
         background: $dark;
         color: $light;
     }
+
     .subtitle {
         color: $light;
     }
@@ -53,25 +57,25 @@ body.dark {
     .box{
         background: $dark;
     }
-    .navbar-brand {
+    .navbar {
         border-bottom: 1px solid $dark-light-separator;
     }
     .navbar-item {
-        background-color: $dark-light;
+        background-color: $dark;
         color: $light;
     }
     .navbar-item:hover {
         color: $primary;
     }
     .navbar-link {
-        background-color: $dark-light;
+        background-color: $dark;
         color: $light;
     }
     .navbar-link:hover {
         color: $primary;
     }
     .navbar-dropdown {
-        background-color: $dark-light;
+        background-color: $dark;
         color: $light;
     }
 }

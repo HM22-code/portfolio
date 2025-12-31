@@ -1,0 +1,71 @@
+{
+    "translation": {
+        "navbar": {
+            "part1": "À propos",
+            "part2": "Curriculum Vitae",
+            "part3": "Projets",
+            "part4": "Réseaux sociaux",
+            "part5": "Langue",
+            "part6": "Anglais",
+            "part7": "Français",
+            "part8": "Mode Sombre",
+            "part9": "Mode Clair"
+        },
+        "banner": {
+            "title": "Bonjour, Je m'appelle Hugo",
+            "subtitle": "Bienvenue sur mon portfolio !"
+        },
+        "social": {
+            "item1": "LinkedIn",
+            "item2": "Github",
+            "item3": "Mail",
+            "item4": "Itch.io"
+        },
+        "about": {
+            "title": "À propos",
+            "description": "Je suis développeur Full-Stack. Je code des site web, des applications, des logicels ou bien des jeux. Je suis passionné par les jeux vidéo et leurs domaines créatifs qui m'inspire dans mes créations. J'aime dessiner. Je m'intéresse aux nouvelles technologies et à l'informatique en général. Je suis curieux de nature et j'aime expérimenter.",
+            "title2": "Ce que je fais",
+            "do1": "Applications",
+            "do2": "Sites Web",
+            "do3": "Jeux",
+            "do4": "Graphismes"
+        },
+        "resume": {
+            "title": "Curriculum Vitae",
+            "tag1": "Tout",
+            "tag2": "Expérience",
+            "tag3": "Formation",
+            "period1": "Septembre 2020 - Juin 2022",
+            "work1": "DUT informatique - IUT Dijon",
+            "location1": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords1": "Java.HTML.CSS.JavaScript.SQL.PL/SQL.C#.C.C++.PHP.Python.Microsoft Office",
+            "period2": "Avril 2022 - Juin 2022",
+            "work2": "Stage Développeur Logiciel - CPage",
+            "location2": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords2": "Java.Java Swing.SQL.Développement Logiciel.Oracle SQL Developer",
+            "period3": "Septembre 2022 - Septembre 2023",
+            "work3": "Alternance Développeur Full-Stack - CPage",
+            "location3": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords3": "Java.Spring Boot.TypeScript.Angular.PL/SQL.Oracle SQL Developer",
+            "period4": "Octobre 2022 - Août 2023",
+            "work4": "Bachelor Concepteur Développeur d'Applications - CESI",
+            "location4": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords4": "Spring Boot.React.React Native.Angular.Développement Logiciel.Gestion de projet"
+        },
+        "projects": {
+            "title": "Projets",
+            "project1": "RPG-idea",
+            "subtitle1": "Angular.Angular Material",
+            "description1": "Une interface de gestion de projet de jeu vidéo RPG réalisée avec Angular.",
+            "project2": "Accro'Fun",
+            "subtitle2": "React.Tailwind",
+            "description2": "Un exemple de projet réalisé avec React et Tailwind.",
+            "project3": "Ex-raceone",
+            "subtitle3": "Pygame",
+            "description3": "Un jeu de type space shooter web et de bureau réalisé avec Pygame."
+        },
+        "footer": {
+            "title": "Fait avec <3 par HM22-code"
+        }
+    }
+}

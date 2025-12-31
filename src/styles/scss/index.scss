@@ -1,70 +1,89 @@
-$dark-light:#4d4d4d;
-$primary: #00a1ff;
-$secondary: #00ff8f;
-$link: $primary;
-$info: $secondary;
-$vite-color: #646cffaa;
-$react-color: #61dafbaa;
-$bulma-color: #59d2d6aa;
+// fonts
+@font-face {
+    font-family: 'ztnature-medium';
+    src: url('/assets/fonts/ZTNature-Medium.ttf');
+}
 
-/* Override Bulma css */
+@font-face {
+    font-family: 'ztnature-thin';
+    src: url('/assets/fonts/ZTNature-Thin.ttf');
+}
 
+@import 'bulma-variables';
 @import '../node_modules/bulma/bulma.sass';
 @import '../node_modules/bulma-timeline/src/sass/index.sass';
+@import '../themes/dark-theme';
 
 a {
-    color: $secondary;
+    color: $primary;
 }
 a:hover {
+    color: $secondary;
+}
+
+footer a.link {
+    text-decoration: underline;
+}
+footer a.link:hover {
     color: $primary;
+    filter: drop-shadow(0 0 0.05em $primary);
+    transition: filter 300ms;
+    text-decoration: underline;
+}
+
+.box p {
+    color: $dark;
 }
 
 .hero-body {
     justify-content: center;
 }
 
+.navbar {
+    border-bottom: 1px solid $light;
+}
+
 .profile-name {
     color: $primary;
     font-weight: bold;
 }
-.profile-name:hover {
-    filter: drop-shadow(0 0 2em $primary);
+.profile-link:hover {
+    filter: drop-shadow(0 0 0.05em $primary);
     transition: filter 300ms;
 }
+
+$vite-color: #646cffaa;
+$react-color: #61dafbaa;
+$bulma-color: #59d2d6aa;
 
 .logo {
 	will-change: filter;
 	transition: filter 300ms;
 }
 .logo.vite, .logo.react, .logo.bulma {
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
 }
 .logo.vite:hover {
-	filter: drop-shadow(0 0 2em $vite-color);
+	filter: drop-shadow(0 0 1em $vite-color);
 }
 .logo.react:hover {
-	filter: drop-shadow(0 0 2em $react-color);
+	filter: drop-shadow(0 0 1em $react-color);
 }
 .logo.bulma:hover {
-    filter: drop-shadow(0 0 2em $bulma-color);
+    filter: drop-shadow(0 0 1em $bulma-color);
 }
 
 .button.is-primary {
     background-color: $primary;
 }
 .button.is-primary:hover {
-    filter: drop-shadow(0 0 2em $primary);
+    filter: drop-shadow(0 0 1em $primary);
     transition: filter 300ms;
 }
 
-.timeline-header .tag {
-    background-color: $secondary;
-    color: white;
-}
-
 .level-item.link.is-primary.aos-init.aos-animate:hover {
-    filter: drop-shadow(0 0 2em $primary);
+    filter: drop-shadow(0 0 1em $primary);
     transition: filter 300ms;
 }
 
@@ -80,7 +99,7 @@ a:hover {
     transition: 400ms ease 100ms;
 }
 .card-image:hover {
-    filter: blur(2px);
+    filter: blur(1px);
     transition: 1s, 1s;
 }
 
@@ -103,13 +122,15 @@ a:hover {
     }
 }
 
-.columns.is-vcentered.box {
+#hero-banner {
     --border-width: 2px;
     border: var(--border-width) solid transparent;
+    border-radius: 0px;
     box-sizing: border-box;
-    border-image: conic-gradient(from var(--angle), $primary 80%, #E0D1FF 88%, #d1f8ff 92%, $secondary 100%) 0.5;
+    border-image: conic-gradient(from var(--angle), $primary 80%, opacify(lighten($primary, 80%), 0.4) 88%, opacify(lighten($secondary, 80%), 0.4) 92%, $primary 100%) 0.5;
     animation: spin 3s linear infinite paused;
     animation-play-state: running;
+    background: radial-gradient(circle, opacify(darken($secondary, 1%), 0.4) 0%, opacify(darken($primary, 7%), 0.4) 100%);
 }
 
 @property --angle {
@@ -140,17 +161,55 @@ img:hover {
 	}
 }
 
-#social {
-    background: rgb(0,161,255);
-    background: radial-gradient(circle, rgba(0,161,255,0.4) 0%, rgba(0,255,143,0.4) 100%);
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
 }
 
-#banner {
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+#social {
+    background: radial-gradient(circle, opacify(darken($secondary, 10%), 0.4) 0%, opacify(darken($primary, 10%), 0.7) 100%);
+}
+
+#social a {
+    filter: drop-shadow(0 0 0.2em $secondary);
+}
+
+#social a:hover {
+    color: $primary;
+    filter: drop-shadow(0 0 0.05em $primary);
+    transition: filter 300ms;
+}
+
+#hero {
     background: linear-gradient(270deg, $primary, $secondary);
     background-size: 400% 400%;
     -webkit-animation: GradientAnimation 30s ease infinite;
     -moz-animation: GradientAnimation 30s ease infinite;
     animation: GradientAnimation 30s ease infinite;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px);
+        pointer-events: none;
+    }
 }
 
 @-webkit-keyframes GradientAnimation {
@@ -167,65 +226,4 @@ img:hover {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
-
-/* Dark mode */
-
-body.dark {
-    background-color: $dark;
-    color: $light;
-}
-body.dark .subtitle {
-    color: $light;
-}
-body.dark .title {
-    color: $primary;
-}
-body.dark button {
-    background: $light;
-    color: $dark;
-}
-body.dark section {
-    background: $dark;
-    color: $light;
-}
-body.dark footer.div,
-body.dark footer,
-body.dark nav {
-    background: $dark-light;
-}
-body.dark div.navbar-menu{
-    background: $dark-light;
-}
-body.dark nav a {
-    color: $light;
-}
-body.dark div.tile{
-    background: $dark;
-    color: $light;
-}
-body.dark div.column{
-    background: $dark;
-    color: $light;
-}
-body.dark .box{
-    background: $dark;
-}
-body.dark .navbar-item {
-    background-color: $dark-light;
-    color: $light;
-}
-body.dark .navbar-item:hover {
-    color: $primary;
-}
-body.dark .navbar-link {
-    background-color: $dark-light;
-    color: $light;
-}
-body.dark .navbar-link:hover {
-    color: $primary;
-}
-body.dark .navbar-dropdown {
-    background-color: $dark-light;
-    color: $light;
 }

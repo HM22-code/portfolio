@@ -1,16 +1,15 @@
-import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
-import Social from "./components/Social";
-import Footer from "./components/Footer";
+import Navbar from "./components/shared/Navbar";
+import Footer from "./components/shared/Footer";
+import Home from "./pages/Home";
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import "./styles/scss/index.scss";
+import './locales/i18n';
 
+// App root
 function App() {
-
+    // Initialize AOS library
     useEffect(() => {
         AOS.init();
     }, [])
@@ -18,15 +17,13 @@ function App() {
 	return (
 		<>
         {
-            <>
+            <div>
                 <Navbar />
-                <Banner />
-                <Social />
-                <About />
-                <Resume />
-                <Projects />
+                <main>
+                    <Home />
+                </main>
                 <Footer />
-            </>
+            </div>
         }
 		</>
 	);

@@ -1,38 +1,50 @@
-import { useTranslation } from 'react-i18next';
-
-export interface TimelineItem {
-    period: string;
-    work: string;
-    location: string;
-    keywords: string;
-}
+import Icon from "@mdi/react";
+import { ExperienceTypes } from "../enum/ExperienceTypes";
+import { TimelineItem } from "../interfaces/TimelineItem";
+import { mdiBagPersonalOutline, mdiBriefcaseVariantOutline, mdiSchoolOutline } from "@mdi/js";
 
 type ResumeTimelineProps = {
     items: TimelineItem[];
 }
 
+// Resume timeline component
 function ResumeTimeline(props: ResumeTimelineProps) {
-
-    const { t } = useTranslation();
-
     return (
         <div className="timeline">
-            <header className="timeline-header">
-                <span className="tag is-medium">{t('resume.start')}</span>
-            </header>
             {
                 props.items.map((item: TimelineItem, key) =>
-                    <div key={key} className="timeline-item">
+                    <div key={key} className="timeline-item"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <div className="timeline-marker"></div>
                         <div className="timeline-content">
+                            <div className="timeline-tag is-icon">
+                                <figure className="image is-32x32">
+                                    {
+                                        item.type === ExperienceTypes.EXPERIENCE ? (
+                                            <Icon path={mdiBriefcaseVariantOutline} size={1} />
+                                        ) :
+                                        item.type === ExperienceTypes.EDUCATION ? (
+                                            <Icon path={mdiSchoolOutline} size={1} />
+                                        ) :
+                                        (
+                                            <Icon path={mdiBagPersonalOutline} size={1} />
+                                        )
+                                    }
+                                </figure>
+                            </div>
                             <p className="heading">{item.period}</p>
                             <p className="is-size-5 has-text-weight-bold">{item.work}</p>
-                            <p className="is-italic is-size-8">{item.location}</p>
-                            <div className="level-left is-mobile is-flex-direction-row is-flex-wrap-wrap is-flex">
+                            <p className="is-italic is-size-8 is-family-secondary">{item.location}</p>
+                            <div className="level-left is-mobile is-flex-direction-row is-flex-wrap-wrap is-flex pt-2">
                                 {
                                     item.keywords.split(".").map((item, key) =>
-                                        <div className="level-item mr-1 mb-1">
-                                            <span key={key} className="tag is-primary">{item}</span>
+                                        <div className="level-item mr-1 mb-1" key={key}>
+                                            <span className="tag is-primary">{item}</span>
                                         </div>
                                     )
                                 }
@@ -41,9 +53,6 @@ function ResumeTimeline(props: ResumeTimelineProps) {
                     </div>
                 )
             }
-            <div className="timeline-header">
-                <span className="tag is-medium">{t('resume.end')}</span>
-            </div>
         </div>
     )
 }

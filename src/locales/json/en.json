@@ -1,0 +1,71 @@
+{
+    "translation": {
+        "navbar": {
+            "part1": "About",
+            "part2": "Resume",
+            "part3": "Projects",
+            "part4": "Social",
+            "part5": "Language",
+            "part6": "English",
+            "part7": "French",
+            "part8": "Dark Mode",
+            "part9": "Light Mode"
+        },
+        "banner": {
+            "title": "Hi, I’m Hugo",
+            "subtitle": "Welcome to my portfolio !"
+        },
+        "social": {
+            "item1": "LinkedIn",
+            "item2": "Github",
+            "item3": "Mail",
+            "item4": "Itch.io"
+        },
+        "about": {
+            "title": "About me",
+            "description": "I am a full-stack developer. I code websites, applications, software, and games. I am passionate about video games and their creative aspects, which inspire me in my own creations. I enjoy drawing. I am interested in new technologies and computer science in general. I am curious by nature and enjoy experimenting.",
+            "title2": "What I do",
+            "do1": "Applications",
+            "do2": "Websites",
+            "do3": "Games",
+            "do4": "Graphics"
+        },
+        "resume": {
+            "title": "Resume",
+            "tag1": "All",
+            "tag2": "Experience",
+            "tag3": "Education",
+            "period1": "September 2020 - June 2022",
+            "work1": "IT Computing University Degree - IUT Dijon",
+            "location1": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords1": "Java.HTML.CSS.JavaScript.SQL.PL/SQL.C#.C.C++.PHP.Python.Microsoft Office",
+            "period2": "April 2022 - June 2022",
+            "work2": "Software Developer Internship - CPage",
+            "location2": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords2": "Java.Java Swing.SQL.Software Developer.Oracle SQL Developer",
+            "period3": "September 2022 - September 2023",
+            "work3": "Full-Stack Developer Internship - CPage",
+            "location3": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords3": "Java.Spring Boot.TypeScript.Angular.PL/SQL.Oracle SQL Developer",
+            "period4": "October 2022 - August 2023",
+            "work4": "Application Developer Bachelor - CESI",
+            "location4": "Dijon, Bourgogne-Franche-Comté, France",
+            "keywords4": "Spring Boot.React.React Native.Angular.Software development.Project management"
+        },
+        "projects": {
+            "title": "Projects",
+            "project1": "RPG-idea",
+            "subtitle1": "Angular.Angular Material",
+            "description1": "A RPG videogame project manager UI made with Angular.",
+            "project2": "Accro'Fun",
+            "subtitle2": "React.Tailwind",
+            "description2": "A sample project made with React and Tailwind.",
+            "project3": "Ex-raceone",
+            "subtitle3": "Pygame",
+            "description3": "A web and desktop space shooter game made with Pygame."
+        },
+        "footer": {
+            "title": "Made with <3 by HM22-code"
+        }
+    }
+}

@@ -1,46 +1,52 @@
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 import ResumeTimeline from '../../components/ResumeTimeline';
 import { ExperienceTypes } from '../../enum/ExperienceTypes';
 import { TimelineItem } from '../../interfaces/TimelineItem';
 import Icon from '@mdi/react';
 import { mdiBriefcaseVariantOutline, mdiSchoolOutline, mdiTagTextOutline } from '@mdi/js';
-import { useState } from 'react';
 
 // Resume section
 function Resume() {
-    const { t } = useTranslation();
-    const timelineItems: TimelineItem[] = [
-        {
-            period: t('resume.period4'),
-            work: t('resume.work4'),
-            location: t('resume.location4'),
-            keywords: t('resume.keywords4'),
-            type: ExperienceTypes.EDUCATION
-        },
-        {
-            period: t('resume.period3'),
-            work: t('resume.work3'),
-            location: t('resume.location3'),
-            keywords: t('resume.keywords3'),
-            type: ExperienceTypes.EXPERIENCE
-        },
-        {
-            period: t('resume.period2'),
-            work: t('resume.work2'),
-            location: t('resume.location2'),
-            keywords: t('resume.keywords2'),
-            type: ExperienceTypes.EXPERIENCE
-        },
-        {
-            period: t('resume.period1'),
-            work: t('resume.work1'),
-            location: t('resume.location1'),
-            keywords: t('resume.keywords1'),
-            type: ExperienceTypes.EDUCATION
-        }
-    ];
-    const [filteredItems, setFilteredItems] = useState<TimelineItem[]>(timelineItems);
+    const { t, i18n } = useTranslation();
+    const [timelineItems, setTimelineItems] = useState<TimelineItem[]>([]);
+    const [filteredItems, setFilteredItems] = useState<TimelineItem[]>([]);
     const [activeTab, setActiveTabs] = useState<string>("All");
+
+    useEffect(() => {
+        const items: TimelineItem[] = [
+            {
+                period: t('resume.period4'),
+                work: t('resume.work4'),
+                location: t('resume.location4'),
+                keywords: t('resume.keywords4'),
+                type: ExperienceTypes.EDUCATION
+            },
+            {
+                period: t('resume.period3'),
+                work: t('resume.work3'),
+                location: t('resume.location3'),
+                keywords: t('resume.keywords3'),
+                type: ExperienceTypes.EXPERIENCE
+            },
+            {
+                period: t('resume.period2'),
+                work: t('resume.work2'),
+                location: t('resume.location2'),
+                keywords: t('resume.keywords2'),
+                type: ExperienceTypes.EXPERIENCE
+            },
+            {
+                period: t('resume.period1'),
+                work: t('resume.work1'),
+                location: t('resume.location1'),
+                keywords: t('resume.keywords1'),
+                type: ExperienceTypes.EDUCATION
+            }
+        ];
+        setTimelineItems(items);
+        setFilteredItems(items);
+    }, [i18n.language, t]);
 
     // Toggle active tab
     function toggleTabs(name: string): void {
@@ -61,11 +67,11 @@ function Resume() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
         >
-            <h2 className="title is-4">
-                {t('resume.title')}
-            </h2>
             <div className="columns">
                 <div className="column">
+                    <h2 className="title is-4">
+                        {t('resume.title')}
+                    </h2>
                     <div className="tabs is-left">
                         <ul>
                             <li id='All' className="is-active">

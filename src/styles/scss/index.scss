@@ -21,6 +21,16 @@ a:hover {
     color: $secondary;
 }
 
+footer a {
+    text-decoration: underline;
+}
+footer a:hover {
+    color: $primary;
+    filter: drop-shadow(0 0 0.05em $primary);
+    transition: filter 300ms;
+    text-decoration: underline;
+}
+
 .hero-body {
     justify-content: center;
 }
@@ -173,7 +183,8 @@ img:hover {
 }
 
 #social a:hover {
-    filter: drop-shadow(0 0 2em $primary);
+    color: $primary;
+    filter: drop-shadow(0 0 0.05em $primary);
     transition: filter 300ms;
 }
 
@@ -192,7 +203,6 @@ img:hover {
         right: 0;
         bottom: 0;
         background-image:
-            //repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px),
             repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px);
         pointer-events: none;
     }

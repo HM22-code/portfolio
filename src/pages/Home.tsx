@@ -11,7 +11,9 @@ function Home() {
             <Banner />
             <Social />
             <About />
+            <hr/>
             <Resume />
+            <hr/>
             <Projects />
 		</div>
 	);

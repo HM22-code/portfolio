@@ -16,14 +16,14 @@ function Footer() {
                 label: t('social.item1')
             },
             {
-                link: "https://github.com/HM22-code",
-                icon: mdiGithub,
-                label: t('social.item2')
-            },
-            {
                 link: "mailto:hugo.montandon2@gmail.com",
                 icon: mdiGmail,
                 label: t('social.item3')
+            },
+            {
+                link: "https://github.com/HM22-code",
+                icon: mdiGithub,
+                label: t('social.item2')
             },
             {
                 link: "https://jude-erdrick.itch.io/",
@@ -33,7 +33,7 @@ function Footer() {
     ];
 
     return (
-        <footer className="footer is-flex is-flex-direction-column py-4">
+        <footer id="footer" className="footer is-flex is-flex-direction-column py-4">
             <div className="level is-mobile">
                 <p className="level-item is-family-code">{t('footer.title')}</p>
             </div>
@@ -44,7 +44,7 @@ function Footer() {
                         <div className="level-left">
                             {
                                 socialLinks.map((social, key) => (
-                                    <a href={social.link} key={key} className="level-item">
+                                    <a href={social.link} key={key} className="level-item link">
                                         <div className="is-flex is-flex-direction-row is-align-items-center">
                                             <Icon path={social.icon} title={social.label} size={1} />
                                             <span>{social.label}</span>

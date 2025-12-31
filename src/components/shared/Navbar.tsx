@@ -61,7 +61,7 @@ function Navbar() {
                     <a className="navbar-item" onClick={() => scrollToIndex('projects')}>
                         {t('navbar.part3')}
                     </a>
-                    <a className="navbar-item" onClick={() => scrollToIndex('social')}>
+                    <a className="navbar-item" onClick={() => scrollToIndex('footer')}>
                         {t('navbar.part4')}
                     </a>
                     <hr/>

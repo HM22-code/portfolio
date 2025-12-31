@@ -10,19 +10,16 @@ function Banner() {
     return (
         <section id="hero" className="hero is-fullheight section">
             <div className="hero-body" >
-                <div id="hero-banner" className="columns is-vcentered box">
-                    <div className="column is-one-fifth">
-                        <a href="https://github.com/HM22-code">
-                            <figure
-                                className="image is-fullwidth"
-                                data-aos="zoom-in"
-                                data-aos-delay="50"
-                                data-aos-duration="1000"
-                                data-aos-easing="ease-in-out"
-                            >
-                                <img id="profile" className="is-rounded " alt="Profile" src={profilePicture} />
-                            </figure>
-                        </a>
+                <div id="hero-banner" className="columns is-vcentered box is-transparent"
+                    data-aos="zoom-in"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                >
+                    <div className="column is-one-fifth is-full-mobile is-flex is-justify-content-center">
+                        <figure className="image is-fullwidth">
+                            <img id="profile" className="is-rounded " alt="Profile" src={profilePicture} />
+                        </figure>
                     </div>
                     <div className="column">
                         <div>

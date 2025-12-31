@@ -23,7 +23,12 @@
         },
         "about": {
             "title": "À propos",
-            "description": "Je suis développeur Full-Stack. Je code des site web, des applications, des logicels ou bien des jeux. Je suis passionné par les jeux vidéo et leurs domaines créatifs qui m'inspire dans mes créations. J'aime dessiner. Je m'intéresse aux nouvelles technologies et à l'informatique en général. Je suis curieux de nature et j'aime expérimenter."
+            "description": "Je suis développeur Full-Stack. Je code des site web, des applications, des logicels ou bien des jeux. Je suis passionné par les jeux vidéo et leurs domaines créatifs qui m'inspire dans mes créations. J'aime dessiner. Je m'intéresse aux nouvelles technologies et à l'informatique en général. Je suis curieux de nature et j'aime expérimenter.",
+            "title2": "Ce que je fais",
+            "do1": "Applications",
+            "do2": "Sites Web",
+            "do3": "Jeux",
+            "do4": "Graphismes"
         },
         "resume": {
             "title": "Curriculum Vitae",

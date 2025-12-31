@@ -5,6 +5,10 @@ body.dark {
     background-color: $dark;
     color: $light;
 
+    a.navbar-burger span {
+        background-color: $light;
+    }
+
     button {
         background: $light;
         color: $dark;
@@ -56,6 +60,10 @@ body.dark {
     }
     .box{
         background: $dark;
+        color: $light;
+    }
+    .box p {
+        color: $light;
     }
     .navbar {
         border-bottom: 1px solid $dark-light-separator;

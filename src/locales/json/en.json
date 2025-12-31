@@ -23,7 +23,12 @@
         },
         "about": {
             "title": "About me",
-            "description": "I am a full-stack developer. I code websites, applications, software, and games. I am passionate about video games and their creative aspects, which inspire me in my own creations. I enjoy drawing. I am interested in new technologies and computer science in general. I am curious by nature and enjoy experimenting."
+            "description": "I am a full-stack developer. I code websites, applications, software, and games. I am passionate about video games and their creative aspects, which inspire me in my own creations. I enjoy drawing. I am interested in new technologies and computer science in general. I am curious by nature and enjoy experimenting.",
+            "title2": "What I do",
+            "do1": "Applications",
+            "do2": "Websites",
+            "do3": "Games",
+            "do4": "Graphics"
         },
         "resume": {
             "title": "Resume",

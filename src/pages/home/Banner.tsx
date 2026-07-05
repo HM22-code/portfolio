@@ -16,9 +16,9 @@ function Banner() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                 >
-                    <div className="column is-one-fifth is-full-mobile is-flex is-justify-content-center">
-                        <figure className="image is-fullwidth">
-                            <img id="profile" className="is-rounded " alt="Profile" src={profilePicture} />
+                    <div className="column is-one-fifth is-full-mobile is-flex">
+                        <figure className="image">
+                            <img id="profile" className="is-rounded" alt="Profile" src={profilePicture} />
                         </figure>
                     </div>
                     <div className="column">

@@ -2,14 +2,13 @@
     "translation": {
         "navbar": {
             "part1": "À propos",
-            "part2": "Curriculum Vitae",
-            "part3": "Projets",
-            "part4": "Réseaux sociaux",
-            "part5": "Langue",
-            "part6": "Anglais",
-            "part7": "Français",
-            "part8": "Mode Sombre",
-            "part9": "Mode Clair"
+            "part2": "Projets",
+            "part3": "Réseaux sociaux",
+            "part4": "Langue",
+            "part5": "Anglais",
+            "part6": "Français",
+            "part7": "Mode Sombre",
+            "part8": "Mode Clair"
         },
         "banner": {
             "title": "Bonjour, Je m'appelle Hugo",

@@ -2,14 +2,13 @@
     "translation": {
         "navbar": {
             "part1": "About",
-            "part2": "Resume",
-            "part3": "Projects",
-            "part4": "Social",
-            "part5": "Language",
-            "part6": "English",
-            "part7": "French",
-            "part8": "Dark Mode",
-            "part9": "Light Mode"
+            "part2": "Projects",
+            "part3": "Social",
+            "part4": "Language",
+            "part5": "English",
+            "part6": "French",
+            "part7": "Dark Mode",
+            "part8": "Light Mode"
         },
         "banner": {
             "title": "Hi, I’m Hugo",
@@ -29,28 +28,6 @@
             "do2": "Websites",
             "do3": "Games",
             "do4": "Graphics"
-        },
-        "resume": {
-            "title": "Resume",
-            "tag1": "All",
-            "tag2": "Experience",
-            "tag3": "Education",
-            "period1": "September 2020 - June 2022",
-            "work1": "IT Computing University Degree - IUT Dijon",
-            "location1": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords1": "Java.HTML.CSS.JavaScript.SQL.PL/SQL.C#.C.C++.PHP.Python.Microsoft Office",
-            "period2": "April 2022 - June 2022",
-            "work2": "Software Developer Internship - CPage",
-            "location2": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords2": "Java.Java Swing.SQL.Software Developer.Oracle SQL Developer",
-            "period3": "September 2022 - September 2023",
-            "work3": "Full-Stack Developer Internship - CPage",
-            "location3": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords3": "Java.Spring Boot.TypeScript.Angular.PL/SQL.Oracle SQL Developer",
-            "period4": "October 2022 - August 2023",
-            "work4": "Application Developer Bachelor - CESI",
-            "location4": "Dijon, Bourgogne-Franche-Comté, France",
-            "keywords4": "Spring Boot.React.React Native.Angular.Software development.Project management"
         },
         "projects": {
             "title": "Projects",
